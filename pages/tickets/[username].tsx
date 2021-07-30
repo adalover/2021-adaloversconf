@@ -56,14 +56,7 @@ export default function TicketShare({ username, ticketNumber, name, usernameFrom
         <meta name="robots" content="noindex" />
       </Head>
       <SkipNavContent />
-      <ConfContent
-        defaultUserData={{
-          username: username || undefined,
-          name: name || '',
-          ticketNumber
-        }}
-        sharePage
-      />
+      <ConfContent />
     </Page>
   );
 }
