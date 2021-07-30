@@ -32,7 +32,7 @@
 }
 
 .footer-link:hover {
-  color: #fff;
+  color: var(--accents-7);
 }
 
 .footer-logo :global(svg) {

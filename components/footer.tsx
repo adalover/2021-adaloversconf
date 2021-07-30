@@ -67,6 +67,17 @@ export default function Footer() {
               Code of Conduct
             </a>
           </p>
+          <div className={styles['footer-separator']} />
+          <p className={styles['footer-paragraph']}>
+            <a
+              href="https://vercel.com"
+              className={styles['footer-link']}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Created by Vercel
+            </a>
+          </p>
           {LEGAL_URL && (
             <>
               <div className={styles['footer-separator']} />

@@ -65,7 +65,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
               ))}
             </div>
             <div className={cn(styles['header-right'])}>
-              <HostedByVercel />
+            {/*  Not remove div */}
             </div>
           </header>
         )}
