@@ -42,21 +42,21 @@
   --text-lg: 18px;
   --text-xl: 24px;
 
-  --accents-1: #fafafa;
-  --accents-3: #999999;
-  --accents-4: #888888;
-  --accents-5: #666666;
-  --accents-6: #444444;
-  --accents-8: #111111;
+  --accents-1: #111111;
+  --accents-2: #333333;
+  --accents-3: #444444;
+  --accents-4: #666666;
+  --accents-5: #888888;
+  --accents-6: #999999;
+  --accents-7: #eaeaea;
+  --accents-8: #fafafa;
 
   --gray: #252729;
   --header-height: 72px;
 
   /* principal colors */
-  --accents-2: #6a205a;
-  --accents-7: #7D8CC4;
-  --secondary-color: #6a205a;
-  --sidebar: #B97375;
+  --secondary-color: #757067;
+  --sidebar: #f1f1ef;
   --brand: #6a205a;
 }
 

@@ -41,11 +41,11 @@
 
 .card {
   border-radius: var(--space-2x);
-  background: #111111;
+  background: #eee;
   display: flex;
   flex-direction: column;
   background-clip: content-box, border-box;
-  background-image: linear-gradient(var(--sidebar), var(--sidebar)), linear-gradient(to right, var(--accents-7), var(--accents-7));
+  background-image: linear-gradient(#eee, #eee), linear-gradient(to right, #ccc, #ccc);
   padding: 1px;
   cursor: pointer;
 }
@@ -53,7 +53,8 @@
 .card:hover,
 .card:focus {
   outline: none;
-  background-image: linear-gradient(var(--accents-7), var(--accents-7)), linear-gradient(to right, var(--sidebar), var(--sidebar));
+  background-image: linear-gradient(#eee, #eee),
+  linear-gradient(to right, var(--brand), var(--brand));
 }
 
 .cardBody {
@@ -84,14 +85,14 @@
 
 .name {
   font-weight: bold;
-  color: #f1f1f1;
+  color: #0e0e0e;
   font-size: 20px;
   margin: 0;
   line-height: 1.4;
 }
 
 .company {
-  color: #f1f1f1;
+  color: #0e0e0e;
 }
 
 .title {

@@ -15,10 +15,9 @@
  */
 
 .background {
-  background: #fffbfa;
-  color: #6a205a;
+  background: #fff;
+  color: #000;
   min-height: 100vh;
-  min-height: var(--100vh);
   display: flex;
   flex-direction: column;
 }
@@ -102,11 +101,11 @@
 .tab:hover,
 .tab:focus,
 .tab:active {
-  color: #fff;
+  color: #000;
 }
 
 .tab-active {
-  color: #fff;
+  color: #000;
   background: linear-gradient(90deg, var(--brand), var(--brand)) left bottom transparent no-repeat;
   background-size: 100% 1px;
 }

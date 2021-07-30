@@ -32,7 +32,7 @@
 }
 
 .footer-link:hover {
-  color: var(--accents-7);
+  color: #000;
 }
 
 .footer-logo :global(svg) {
@@ -53,6 +53,7 @@
 .footer-copyright {
   text-align: center;
   margin-bottom: 15px;
+  user-select: none;
 }
 
 .footer-separator {
