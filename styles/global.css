@@ -48,14 +48,16 @@
   --accents-4: #888888;
   --accents-5: #666666;
   --accents-6: #444444;
-  --accents-7: #333333;
   --accents-8: #111111;
 
   --gray: #252729;
-  --secondary-color: #8a8f98;
-  --sidebar: #0e0e10;
   --header-height: 72px;
-  --brand: #845ef7;
+
+  /* principal colors */
+  --accents-7: #073b4c;
+  --secondary-color: #073b4c;
+  --sidebar: #51b0ba;
+  --brand: #6a205a;
 }
 
 html {
