@@ -44,7 +44,7 @@ export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {
     name: 'Collaboration',
-    route: '/stage/a'
+    route: '/collaboration'
   },
   {
     name: 'Schedule',

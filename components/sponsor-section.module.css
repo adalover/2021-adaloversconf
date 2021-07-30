@@ -109,7 +109,7 @@
 
 .name {
   font-weight: 800;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 30px;
   margin: 0;
   line-height: 1.4;
@@ -119,9 +119,9 @@
 
 .button {
   border-radius: var(--space-2x);
-  border: 1px solid #fff;
-  color: #000;
-  background: #fff;
+  border: 1px solid var(--sidebar);
+  color: var(--secondary-color);
+  background: var(--accents-7);
   cursor: pointer;
   font-family: inherit;
   font-size: var(--text-md);
@@ -141,8 +141,8 @@
 
 .button:hover,
 .button:focus {
-  background: black;
-  color: #fff;
+  background: var(--accents-7);
+  color: var(--secondary-color);
 }
 
 .button > svg {
@@ -152,8 +152,8 @@
 }
 
 .button-resource {
-  background: #111111;
-  color: #fff;
+  background: var(--sidebar);
+  color: var(--secondary-color);
   border: 1px solid var(--accents-7);
   max-width: 100%;
   margin-bottom: var(--space-4x);
@@ -172,8 +172,8 @@
 }
 
 .button-link {
-  background: #000;
-  color: #fff;
+  background: var(--sidebar);
+  color: var(--secondary-color);
   border: none;
 }
 
@@ -188,7 +188,7 @@
 
 .heading {
   font-weight: 800;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 24px;
   margin: var(--space-4x) 0;
   line-height: 1.4;

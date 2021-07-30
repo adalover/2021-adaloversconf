@@ -43,7 +43,6 @@
   --text-xl: 24px;
 
   --accents-1: #fafafa;
-  --accents-2: #eaeaea;
   --accents-3: #999999;
   --accents-4: #888888;
   --accents-5: #666666;
@@ -54,6 +53,7 @@
   --header-height: 72px;
 
   /* principal colors */
+  --accents-2: #6a205a;
   --accents-7: #7D8CC4;
   --secondary-color: #6a205a;
   --sidebar: #B97375;
