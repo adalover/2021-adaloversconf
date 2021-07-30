@@ -30,6 +30,7 @@ export const SHORT_DATE = 'Sep 24 - 5:00pm GMT+1';
 export const FULL_DATE = 'Sep 24th 5pm (GMT+1)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
+export const EVENT_FORMAT = 'Online';
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
 // strings containing your own privacy policy URL and copyright holder name
