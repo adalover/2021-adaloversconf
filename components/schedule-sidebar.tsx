@@ -39,21 +39,7 @@ export default function ScheduleSidebar({ allStages }: Props) {
     <div className={styles.schedule}>
       <h3 className={styles.header}>Schedule</h3>
       <p>{SHORT_DATE}</p>
-      <Select
-        aria-label="Select a stage"
-        value={currentStageSlug}
-        onChange={e => {
-          const slug = e.target.value;
-          setCurrentStageSlug(slug);
-          router.push(`/stage/${slug}`);
-        }}
-      >
-        {allStages.map(stage => (
-          <option key={stage.slug} value={stage.slug}>
-            {stage.name}
-          </option>
-        ))}
-      </Select>
+
       <div className={styles.talks}>
         {currentStage?.schedule.map(talk => (
           <TalkCard key={talk.title} talk={talk} showTime />
