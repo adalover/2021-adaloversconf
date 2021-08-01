@@ -76,7 +76,6 @@ export async function getAllStages(): Promise<Stage[]> {
         name
         slug
         stream
-        discord
         schedule {
           title
           start
@@ -106,7 +105,6 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
         website
         callToAction
         callToActionLink
-        discord
         youtubeSlug
         tier
         links {

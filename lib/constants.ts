@@ -43,15 +43,15 @@ export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {
-    name: 'Collaboration',
+    name: 'Colaboración',
     route: '/collaboration'
   },
   {
-    name: 'Schedule',
+    name: 'Horarios',
     route: '/schedule'
   },
   {
-    name: 'Speakers',
+    name: 'Ponentes',
     route: '/speakers'
   },
   {

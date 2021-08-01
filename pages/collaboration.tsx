@@ -16,13 +16,13 @@
 
 import Page from '@components/page';
 import Layout from '@components/layout';
-import { META_DESCRIPTION } from '@lib/constants';
 import CollaborationSection from '@components/collaboration-container';
+import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from './staticsText';
 
 export default function CollaborationPage() {
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
-    description: META_DESCRIPTION
+    title: COLLABORATION_TITLE,
+    description: COLLABORATION_DESCRIPTION
   };
 
   return (
