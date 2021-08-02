@@ -17,7 +17,7 @@
 import Page from '@components/page';
 import Layout from '@components/layout';
 import CollaborationSection from '@components/collaboration-container';
-import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from './staticsText';
+import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from '@lib/staticsText';
 
 export default function CollaborationPage() {
   const meta = {

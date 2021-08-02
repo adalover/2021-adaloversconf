@@ -23,7 +23,7 @@ import Header from '@components/header';
 
 import { getAllStages } from '@lib/cms-api';
 import { Stage } from '@lib/types';
-import { SCHEDULE_DESCRIPTION, SCHEDULE_NAME, SCHEDULE_TITLE } from './staticsText';
+import { SCHEDULE_DESCRIPTION, SCHEDULE_NAME, SCHEDULE_TITLE } from '@lib/staticsText';
 
 type Props = {
   allStages: Stage[];

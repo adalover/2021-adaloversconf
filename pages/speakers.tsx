@@ -24,7 +24,7 @@ import Header from '@components/header';
 import { getAllSpeakers } from '@lib/cms-api';
 import { Speaker } from '@lib/types';
 import { META_DESCRIPTION } from '@lib/constants';
-import { SPEAKERS_DESCRIPTION, SPEAKERS_NAME, SPEAKERS_TITLE } from './staticsText';
+import { SPEAKERS_DESCRIPTION, SPEAKERS_NAME, SPEAKERS_TITLE } from '@lib/staticsText';
 
 type Props = {
   speakers: Speaker[];

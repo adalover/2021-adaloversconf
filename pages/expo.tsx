@@ -24,7 +24,7 @@ import Layout from '@components/layout';
 import { getAllSponsors } from '@lib/cms-api';
 import { Sponsor } from '@lib/types';
 import { META_DESCRIPTION } from '@lib/constants';
-import { SPONSOR_DESCRIPTION, SPONSOR_NAME, SPONSOR_TITLE } from './staticsText';
+import { SPONSOR_DESCRIPTION, SPONSOR_NAME, SPONSOR_TITLE } from '@lib/staticsText';
 
 type Props = {
   sponsors: Sponsor[];
