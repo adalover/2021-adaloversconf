@@ -37,8 +37,8 @@ export default function SpeakersGrid({ speakers }: Props) {
                 loading="lazy"
                 quality="50"
                 title={speaker.name}
-                width={300}
-                height={300}
+                width={500}
+                height={500}
               />
             </div>
             <div className={styles.cardBody}>
