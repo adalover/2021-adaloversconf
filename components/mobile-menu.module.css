@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: black;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,18 +38,18 @@
   font-size: var(--space-8x);
   letter-spacing: -0.05em;
   font-weight: 800;
-  color: #fff;
+  color: #000;
   margin-bottom: var(--space-4x);
   line-height: 1.5;
   width: fit-content;
 }
 
 .nav-item:focus {
-  outline: 1px dotted #fff;
+  outline: 1px dotted #000;
 }
 
 .nav-active {
-  color: #fff;
+  color: #000;
   background: linear-gradient(90deg, var(--brand), var(--brand)) left bottom transparent no-repeat;
   background-size: 100% 2px;
 }
