@@ -38,6 +38,17 @@
   color: var(--brand);
 }
 
+.detail {
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-8x);
+  color: var(--brand);
+}
+
 .description {
   font-weight: 400;
   font-size: 20px;
@@ -76,5 +87,10 @@
     font-size: var(--space-8x);
     max-width: 531px;
     margin: 40px auto;
+  }
+
+  .detail {
+    font-size: 20px;
+    margin-bottom: 80px;
   }
 }

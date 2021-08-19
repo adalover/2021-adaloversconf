@@ -38,22 +38,22 @@ export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const URL_STREAM = 'https://www.youtube.com/embed/Fz2RdjA8-Uc'; // TODO: Change to correctly url stream
 
 export const NAVIGATION = [
-  {
-    name: 'Colaboración',
-    route: '/collaboration'
-  },
-  {
-    name: 'Horarios',
-    route: '/schedule'
-  },
-  {
-    name: 'Ponentes',
-    route: '/speakers'
-  },
-  {
-    name: 'Sponsors',
-    route: '/expo'
-  }
+  // {
+  //   name: 'Colaboración',
+  //   route: '/collaboration'
+  // }
+  // {
+  //   name: 'Horarios',
+  //   route: '/schedule'
+  // },
+  // {
+  //   name: 'Ponentes',
+  //   route: '/speakers'
+  // },
+  // {
+  //   name: 'Sponsors',
+  //   route: '/expo'
+  // }
 // TODO: uncomment on the week of event
 //  {
 //    name: 'En directo',

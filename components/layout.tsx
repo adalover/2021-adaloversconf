@@ -42,7 +42,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
         {!hideNav && (
           <header className={cn(styles.header)}>
             <div className={styles['header-logos']}>
-              <MobileMenu key={router.asPath} />
+              {/*<MobileMenu key={router.asPath} />*/}
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles.logo}>

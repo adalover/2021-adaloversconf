@@ -31,6 +31,10 @@ export default function Hero() {
         <p>
           <strong>{EVENT_FORMAT}</strong>
         </p>
+
+      </div>
+      <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.detail)}>
+        <p>Próximamente más información</p>
       </div>
     </div>
   );
