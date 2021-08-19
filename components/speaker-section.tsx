@@ -52,7 +52,7 @@ export default function SpeakerSection({ speaker }: Props) {
           >
             <path d="M15 18l-6-6 6-6" />
           </svg>
-          Back to speakers
+          Volver a ponentes
         </a>
       </Link>
       <div key={speaker.name} className={styles.container}>
@@ -76,7 +76,7 @@ export default function SpeakerSection({ speaker }: Props) {
             </p>
             <h2 className={styles['bio-header']}>Bio</h2>
             <p className={styles.bio}>{speaker.bio}</p>
-            <h3 className={styles['socials-header']}>Social Media</h3>
+            <h3 className={styles['socials-header']}>Redes sociales</h3>
             {speaker.twitter ? (
               <a
                 aria-label="Twitter"

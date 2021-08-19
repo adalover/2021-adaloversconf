@@ -33,7 +33,7 @@
 }
 
 .backlink:hover {
-  color: #fff;
+  color: #000;
 }
 
 .speaker-details {
@@ -87,18 +87,18 @@
 
 .name {
   font-weight: 800;
-  color: #fff;
+  color: #000;
   font-size: 56px;
   margin: 0;
   line-height: 1.2;
 }
 
 .company {
-  color: #fff;
+  color: #000;
 }
 
 .company:hover {
-  color: #fff;
+  color: #000;
 }
 
 .title {
@@ -110,13 +110,13 @@
 .bio-header {
   font-size: 30px;
   letter-spacing: -0.05em;
-  color: #fff;
+  color: #000;
 }
 
 .socials-header {
   font-size: 24px;
   letter-spacing: -0.05em;
-  color: #fff;
+  color: #000;
   margin-bottom: var(--space-4x);
 }
 
