@@ -39,10 +39,10 @@ export const URL_STREAM = 'https://www.youtube.com/embed/Fz2RdjA8-Uc'; // TODO: 
 
 export const NAVIGATION = [
 // TODO: uncomment sections when completed
-  // {
-  //   name: 'Colaboración',
-  //   route: '/collaboration'
-  // }
+  {
+    name: 'Colaboración',
+    route: '/collaboration'
+  }
   // {
   //   name: 'Horarios',
   //   route: '/schedule'
