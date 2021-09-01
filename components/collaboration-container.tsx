@@ -23,7 +23,7 @@ import { COLLABORATION_DESCRIPTION } from '@lib/staticsText';
 
 export default function CollaborationSection() {
   const collaborator = {
-    name: 'Amate',
+    name: 'Ámate',
     youtube: `https://www.youtube.com/embed/MIH5UFsl6Hg`,
     logo: { url: '/logo_amate_15_años-01_color.png' },
     description: COLLABORATION_DESCRIPTION,

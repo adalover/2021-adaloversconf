@@ -1,6 +1,6 @@
 export const SPONSOR_NAME = 'Sponsors';
 export const SPONSOR_TITLE = 'Sponsors - AdaLoversConf21';
-export const SPONSOR_DESCRIPTION = 'Los patrocinadores del evento colaboran con el donativo contra el cancer a la Asociación Amate, puedes ver más en el apartado colaboración.';
+export const SPONSOR_DESCRIPTION = 'Los patrocinadores del evento colaboran con el donativo contra el cancer a la Asociación Ámate, puedes ver más en el apartado colaboración.';
 
 export const SPEAKERS_NAME = 'Ponentes';
 export const SPEAKERS_TITLE = 'Ponentes - AdaLoversConf21';
@@ -12,6 +12,6 @@ export const SCHEDULE_DESCRIPTION = 'Aquí encontrarás toda la información de 
 
 export const COLLABORATION_NAME = 'Colaboración';
 export const COLLABORATION_TITLE = 'Colaboración - AdaLoversConf21';
-export const COLLABORATION_DESCRIPTION = 'Este año estamos muy contentas de poder colaborar con una asociación como Amate, una asociación que luchan contra el cáncer de mama en Tenerife. '+
+export const COLLABORATION_DESCRIPTION = 'Este año estamos muy contentas de poder colaborar con una asociación como Ámate, una asociación que luchan contra el cáncer de mama en Tenerife. '+
   'Así que TODO lo que recaudaremos irá destinado a esta asociación. ' +
   '¿Te gustaría aportar tu granito de arena a esta gran causa? Simplemente compra tu entrada simbólica al evento, ¡anímate!';
