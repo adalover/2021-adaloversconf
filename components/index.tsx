@@ -16,13 +16,22 @@
 
 import Layout from './layout';
 import ConfContainer from './conf-container';
-import Hero from './hero';
+import styles from '@components/conf-container.module.css';
 
 export default function Conf() {
   return (
     <Layout>
       <ConfContainer>
-        <Hero />
+        <div className={styles.video}>
+          <iframe
+            className='embed-responsive-item'
+            src='https://www.youtube.com/embed/h-bS0NuYYfA?autoplay=1&mute=1&loop=1&controls=0&playlist=h-bS0NuYYfA'
+            title='AdaLoversConf 2021'
+            frameBorder='0'
+            allowFullScreen
+          />
+        </div>
+        {/*<Hero />*/}
       </ConfContainer>
     </Layout>
   );

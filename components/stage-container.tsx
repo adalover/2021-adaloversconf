@@ -35,7 +35,7 @@ export default function StageContainer({ stage, allStages }: Props) {
 
   const updatedStages = response.data || [];
   const stream = URL_STREAM;
-  const name = 'AdaLoversCon 2021';
+  const name = 'AdaLoversConf 2021';
 
   console.log(12345, stream);
   return (

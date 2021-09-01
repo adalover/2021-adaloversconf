@@ -38,10 +38,11 @@ export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const URL_STREAM = 'https://www.youtube.com/embed/Fz2RdjA8-Uc'; // TODO: Change to correctly url stream
 
 export const NAVIGATION = [
-  // {
-  //   name: 'Colaboración',
-  //   route: '/collaboration'
-  // }
+// TODO: uncomment sections when completed
+  {
+    name: 'Colaboración',
+    route: '/collaboration'
+  }
   // {
   //   name: 'Horarios',
   //   route: '/schedule'
@@ -53,12 +54,11 @@ export const NAVIGATION = [
   // {
   //   name: 'Sponsors',
   //   route: '/expo'
-  // }
-// TODO: uncomment on the week of event
-//  {
-//    name: 'En directo',
-//    route: '/stage/charlas'
-//  }
+  // },
+  //  {
+  //    name: 'En directo',
+  //    route: '/stage/charlas'
+  //  }
 ];
 
 export const SAMPLE_TICKET_NUMBER = 1234;

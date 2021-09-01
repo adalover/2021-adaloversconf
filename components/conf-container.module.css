@@ -19,6 +19,14 @@
   padding: 0 var(--space-4x);
 }
 
+.video {
+  position: fixed;
+  width: 100%;
+  height: 95%;
+  left: 0;
+  top: 0;
+}
+
 @media (min-width: 768px) {
   .container {
     margin: auto;

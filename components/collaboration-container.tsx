@@ -24,10 +24,10 @@ import { COLLABORATION_DESCRIPTION } from '@lib/staticsText';
 export default function CollaborationSection() {
   const collaborator = {
     name: 'Amate',
-    youtube: `https://www.youtube.com/embed/mcPV9oIEmTU`,
+    youtube: `https://www.youtube.com/embed/MIH5UFsl6Hg`,
     logo: { url: '/logo_amate_15_años-01_color.png' },
     description: COLLABORATION_DESCRIPTION,
-    callToActionLink: '',
+    callToActionLink: 'https://www.ecoentradas.com/elegirsesion/611',
     callToAction: '¡Dona!',
     links: [{
       url: 'https://amate-tenerife.com/',
@@ -46,7 +46,7 @@ export default function CollaborationSection() {
           allowFullScreen
           frameBorder='0'
           height='100%'
-          src={`https://www.youtube.com/embed/mcPV9oIEmTU`}
+          src={collaborator.youtube}
           title={collaborator.name}
           width='100%'
         />
