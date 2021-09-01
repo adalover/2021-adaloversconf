@@ -25,6 +25,7 @@ export type Speaker = {
   slug: string;
   twitter: string;
   github: string;
+  website: string;
   company: string;
   talk: Talk;
   image: Image;

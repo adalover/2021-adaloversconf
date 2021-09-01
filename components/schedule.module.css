@@ -72,9 +72,12 @@
     padding: var(--space-8x) 0;
   }
 
-  .talks {
+  .talks > div {
+    display: flex;
     flex-direction: row;
     margin-top: 0;
+    gap: 24px;
+    align-items: flex-end;
   }
 
   .stage-name {
