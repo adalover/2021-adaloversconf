@@ -42,23 +42,23 @@ export const NAVIGATION = [
   {
     name: 'Colaboración',
     route: '/collaboration'
-  }
+  },
+  {
+    name: 'Colaboradores',
+    route: '/expo'
+  },
   // {
   //   name: 'Horarios',
   //   route: '/schedule'
   // },
-  // {
-  //   name: 'Ponentes',
-  //   route: '/speakers'
-  // },
-  // {
-  //   name: 'Sponsors',
-  //   route: '/expo'
-  // },
-  //  {
-  //    name: 'En directo',
-  //    route: '/stage/charlas'
-  //  }
+  {
+    name: 'Ponentes',
+    route: '/speakers'
+  }
+   // {
+   //   name: 'En directo',
+   //   route: '/stage/charlas'
+   // }
 ];
 
 export const SAMPLE_TICKET_NUMBER = 1234;

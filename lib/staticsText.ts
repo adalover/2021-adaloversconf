@@ -1,6 +1,6 @@
-export const SPONSOR_NAME = 'Sponsors';
-export const SPONSOR_TITLE = 'Sponsors - AdaLoversConf21';
-export const SPONSOR_DESCRIPTION = 'Los patrocinadores del evento colaboran con el donativo contra el cancer a la Asociación Ámate, puedes ver más en el apartado colaboración.';
+export const SPONSOR_NAME = 'Colaboradores';
+export const SPONSOR_TITLE = 'Colaboradores - AdaLoversConf21';
+export const SPONSOR_DESCRIPTION = 'Los colaboradores del evento participan con el donativo a la Asociación Ámate en la lucha contra el cáncer, puedes ver más en el apartado colaboración.';
 
 export const SPEAKERS_NAME = 'Ponentes';
 export const SPEAKERS_TITLE = 'Ponentes - AdaLoversConf21';
