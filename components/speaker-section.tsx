@@ -115,21 +115,6 @@ export default function SpeakerSection({ speaker }: Props) {
                 <GithubIcon color="#D8D8D8" size={24} />
               </span>
             )}
-            {speaker.website ? (
-              <a
-                aria-label="Website"
-                className={styles.githubIcon}
-                href={speaker.website}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <WebsiteIcon />
-              </a>
-            ) : (
-              <span className={cn(styles.githubIcon, styles.disabled)}>
-                <WebsiteIcon />
-              </span>
-            )}
           </div>
         </div>
       </div>
