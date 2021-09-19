@@ -35,7 +35,7 @@ export default function SpeakersGrid({ speakers }: Props) {
                 src={speaker.image.url}
                 className={styles.image}
                 loading="lazy"
-                quality="50"
+                quality="100"
                 title={speaker.name}
                 width={500}
                 height={500}
