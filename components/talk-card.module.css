@@ -29,6 +29,7 @@
   border-radius: var(--space-2x);
   min-width: var(--talk-card-width, 270px);
   max-width: var(--talk-card-width, 270px);
+  min-height: 130px;
   padding: 1px;
   background-clip: content-box, border-box;
   background-image: linear-gradient(#eee, #eee), linear-gradient(to right, #ccc, #ccc);

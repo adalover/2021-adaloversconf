@@ -72,9 +72,12 @@
     padding: var(--space-8x) 0;
   }
 
-  .talks > div {
+  .talks {
     display: flex;
     flex-direction: row;
+  }
+
+  .talks > div {
     margin-top: 0;
     gap: 24px;
     align-items: flex-end;

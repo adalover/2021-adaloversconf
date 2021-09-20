@@ -26,8 +26,8 @@ export const META_DESCRIPTION =
 export const SITE_DESCRIPTION =
   'AdaLoversConf21 evento online, visibilizando a mujeres del sector de desarrollo de software.';
 export const DATE = 'Septiembre 24, 2021';
-export const SHORT_DATE = 'Sep 24 - 5:00pm GMT+1';
-export const FULL_DATE = 'Sep 24th 5pm (GMT+1)';
+export const SHORT_DATE = 'Sep 24 - 5:00pm UTC+1';
+export const FULL_DATE = 'Sep 24th 5pm (UTC+1)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 export const EVENT_FORMAT = 'Online';
@@ -35,10 +35,9 @@ export const EVENT_FORMAT = 'Online';
 export const CODE_OF_CONDUCT =
   'https://creative-glasses-5eb.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6';
 export const REPO = 'https://github.com/adalover/2021-adaloversconf';
-export const URL_STREAM = 'https://www.youtube.com/embed/Fz2RdjA8-Uc'; // TODO: Change to correctly url stream
+export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
 export const NAVIGATION = [
-// TODO: uncomment sections when completed
   {
     name: 'Colaboración',
     route: '/collaboration'
@@ -47,18 +46,18 @@ export const NAVIGATION = [
     name: 'Colaboradores',
     route: '/expo'
   },
-  // {
-  //   name: 'Horarios',
-  //   route: '/schedule'
-  // },
   {
     name: 'Ponentes',
     route: '/speakers'
-  }
-   // {
-   //   name: 'En directo',
-   //   route: '/stage/charlas'
-   // }
+  },
+  {
+    name: 'Horarios',
+    route: '/schedule'
+  },
+   {
+     name: 'En directo',
+     route: '/stage/charlas'
+   }
 ];
 
 export const SAMPLE_TICKET_NUMBER = 1234;
