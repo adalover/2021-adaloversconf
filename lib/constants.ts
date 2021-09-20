@@ -47,14 +47,14 @@ export const NAVIGATION = [
     name: 'Colaboradores',
     route: '/expo'
   },
-  // {
-  //   name: 'Horarios',
-  //   route: '/schedule'
-  // },
   {
     name: 'Ponentes',
     route: '/speakers'
-  }
+  },
+  {
+    name: 'Horarios',
+    route: '/schedule'
+  },
    // {
    //   name: 'En directo',
    //   route: '/stage/charlas'
