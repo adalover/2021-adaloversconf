@@ -35,10 +35,9 @@ export const EVENT_FORMAT = 'Online';
 export const CODE_OF_CONDUCT =
   'https://creative-glasses-5eb.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6';
 export const REPO = 'https://github.com/adalover/2021-adaloversconf';
-export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY'; // TODO: Change to correctly url stream
+export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
 export const NAVIGATION = [
-// TODO: uncomment sections when completed
   {
     name: 'Colaboración',
     route: '/collaboration'
