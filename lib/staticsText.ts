@@ -8,7 +8,7 @@ export const SPEAKERS_DESCRIPTION = 'Las ponentes con las que contaremos en esta
 
 export const SCHEDULE_NAME = 'Horarios';
 export const SCHEDULE_TITLE = 'Horarios - AdaLoversConf21';
-export const SCHEDULE_DESCRIPTION = 'Aquí encontrarás toda la información de las charlas del evento. No olvides que es hora Canaria 🇮🇨 (GMT+1).';
+export const SCHEDULE_DESCRIPTION = 'Aquí encontrarás toda la información de las charlas del evento. No olvides que es hora Canaria 🇮🇨 (UTC+1).';
 
 export const COLLABORATION_NAME = 'Colaboración';
 export const COLLABORATION_TITLE = 'Colaboración - AdaLoversConf21';

@@ -26,8 +26,8 @@ export const META_DESCRIPTION =
 export const SITE_DESCRIPTION =
   'AdaLoversConf21 evento online, visibilizando a mujeres del sector de desarrollo de software.';
 export const DATE = 'Septiembre 24, 2021';
-export const SHORT_DATE = 'Sep 24 - 5:00pm GMT+1';
-export const FULL_DATE = 'Sep 24th 5pm (GMT+1)';
+export const SHORT_DATE = 'Sep 24 - 5:00pm UTC+1';
+export const FULL_DATE = 'Sep 24th 5pm (UTC+1)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 export const EVENT_FORMAT = 'Online';
