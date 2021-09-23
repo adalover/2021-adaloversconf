@@ -75,6 +75,7 @@
   .talks {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .talks > div {
