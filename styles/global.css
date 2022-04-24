@@ -52,12 +52,15 @@
   --accents-8: #fafafa;
 
   --gray: #252729;
+  --white: #ffff;
   --header-height: 72px;
 
   /* principal colors */
+  --primary-color: #51b0baff;
+  --secondary-color: #2c2c2c;
   --tertiary-color: #757067;
-  --sidebar: #51B0BAFF;
-  --brand: #51B0BAFF;
+  --sidebar: var(--primary-color);
+  --brand: var(--primary-color);
 }
 
 html {
