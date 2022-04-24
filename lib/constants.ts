@@ -40,24 +40,39 @@ export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 export const NAVIGATION = [
   {
     name: 'Colaboración',
-    route: '/collaboration'
+    route: '/collaboration',
+    hide: true
   },
   {
     name: 'Colaboradores',
-    route: '/expo'
+    route: '/expo',
+    hide: true
   },
   {
     name: 'Ponentes',
-    route: '/speakers'
+    route: '/speakers',
+    hide: true
   },
   {
     name: 'Horarios',
-    route: '/schedule'
+    route: '/schedule',
+    hide: true
   },
-   {
-     name: 'En directo',
-     route: '/stage/charlas'
-   }
+  {
+    name: 'En directo',
+    route: '/stage/charlas',
+    hide: true
+  },
+  {
+    name: 'C4P',
+    route: '/call-for-paper',
+    hide: false
+  },
+  {
+    name: 'Dossier',
+    route: '/dossier',
+    hide: false
+  }
 ];
 
 export const SAMPLE_TICKET_NUMBER = 1234;
