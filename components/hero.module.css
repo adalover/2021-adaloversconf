@@ -55,14 +55,14 @@
   line-height: 1.4;
   text-align: center;
   margin: auto auto 30px;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   max-width: 355px;
 }
 
 .description-separator {
   height: 24px;
   width: 1px;
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   margin: 0 var(--space-4x);
 }
 
