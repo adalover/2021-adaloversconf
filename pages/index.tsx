@@ -14,21 +14,33 @@
  * limitations under the License.
  */
 
-import { SkipNavContent } from '@reach/skip-nav';
-
 import Page from '@components/page';
-import ConfContent from '@components/index';
+import Layout from '@components/layout';
+import ConfContainer from '@components/conf-container';
+import { ButtonLinkPrimary } from '@components/buttons/buttonLinkPrimary';
+import { DATE } from '@lib/constants';
 
 export default function Conf() {
   const meta = {
     title: 'AdaLoversConf',
-    description: 'Evento AdaLoversConf 2021'
+    description: 'Evento AdaLoversConf 2021',
+    image: 'AdaLovelace.jpg'
   };
 
   return (
     <Page meta={meta} fullViewport>
-      <SkipNavContent />
-      <ConfContent />
+      <Layout hideNav={true}>
+        <ConfContainer>
+          <div className='homeInfo'>
+            <img src='logowhite.png' />
+            {DATE.toUpperCase()}
+            <div className='callToActionContainer'>
+              <ButtonLinkPrimary text="Call 4 paper" link='/call-for-paper' />
+              <ButtonLinkPrimary text="Dossier" isNewPage={true} link='/dossier_sponsors.pdf' />
+            </div>
+          </div>
+        </ConfContainer>
+      </Layout>
     </Page>
   );
 }
