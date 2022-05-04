@@ -15,7 +15,7 @@
  */
 
 .background {
-  background: #fff;
+  background: var(--primary-color);
   color: #000;
   min-height: 100vh;
   display: flex;
@@ -78,9 +78,9 @@
     display: initial;
   }
 
-  .tabs > a:nth-child(2),
-  .tabs > a:nth-child(3),
-  .tabs > a:nth-child(4) {
+  .tabs>a:nth-child(2),
+  .tabs>a:nth-child(3),
+  .tabs>a:nth-child(4) {
     display: inline-flex;
   }
 }

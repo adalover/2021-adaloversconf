@@ -21,18 +21,18 @@
   line-height: 1.5;
   display: flex;
   justify-content: center;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   z-index: 2;
 }
 
 .footer-link {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-size: 12px;
   transition: color 0.2s ease;
 }
 
 .footer-link:hover {
-  color: #000;
+  color: var(--white);
 }
 
 .footer-logo :global(svg) {
