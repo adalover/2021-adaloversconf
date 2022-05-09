@@ -31,6 +31,7 @@ export const FULL_DATE = 'Sep 24th 5pm (UTC+1)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 export const EVENT_FORMAT = 'Online';
+export const COMING_SOON = '¡¡Próximamente más información!!';
 
 export const CODE_OF_CONDUCT =
   'https://adalovedev.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6';
