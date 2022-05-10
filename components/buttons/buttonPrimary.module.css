@@ -1,0 +1,27 @@
+.button {
+    border-radius: var(--space-2x);
+    border: 1px solid var(--white);
+    color: var(--secondary-color);
+    background: var(--white);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--text-md);
+    letter-spacing: -0.02em;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.2s ease;
+    padding: 0 var(--space-4x);
+    height: 55px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: var(--space-4x);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover,
+.button:focus {
+    background: var(--secondary-color);
+    color: var(--white);
+}

@@ -15,7 +15,7 @@
  */
 
 .wrapper {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@
 }
 
 .mobile-copy * {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   transition: color 0.2s ease;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .field * {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   transition: color 0.2s ease;
 }
 

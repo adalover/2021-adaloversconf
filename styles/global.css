@@ -52,12 +52,15 @@
   --accents-8: #fafafa;
 
   --gray: #252729;
+  --white: #ffff;
   --header-height: 72px;
 
   /* principal colors */
-  --secondary-color: #757067;
-  --sidebar: #51B0BAFF;
-  --brand: #51B0BAFF;
+  --primary-color: #51b0baff;
+  --secondary-color: #2c2c2c;
+  --tertiary-color: #757067;
+  --sidebar: var(--primary-color);
+  --brand: var(--primary-color);
 }
 
 html {
@@ -82,7 +85,7 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1.65;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  font-family: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: var(--text-md);
   font-weight: 400;
@@ -117,7 +120,7 @@ h3 {
 a {
   text-decoration: none;
   transition: color 0.2s ease;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 iframe {

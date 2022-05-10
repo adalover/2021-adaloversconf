@@ -53,7 +53,7 @@
 }
 
 .backlink {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   padding: 0 24px;
   display: flex;
   align-items: center;
@@ -177,7 +177,7 @@
 }
 
 .description {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .resources {
