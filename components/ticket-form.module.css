@@ -39,7 +39,7 @@
 }
 
 .description {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   margin: 0;
   text-align: center;
 }

@@ -40,7 +40,7 @@
   font-size: var(--text-md);
   line-height: 1.4;
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   max-width: 355px;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .input::placeholder {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .input-label {

@@ -16,7 +16,7 @@
 
 .container {
   appearance: none;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   display: inline-flex;
   text-transform: uppercase;
   user-select: none;
@@ -57,7 +57,7 @@
 }
 
 .select:invalid {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .select option {
