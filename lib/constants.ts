@@ -32,6 +32,8 @@ export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 export const EVENT_FORMAT = 'Online';
 export const COMING_SOON = '¡¡Próximamente más información!!';
+export const CALL_FOR_PAPER = 'https://forms.gle/pgTtB4k5wPdLDHVw6';
+export const DOSSIER = '/ES - Dossier AdaLoversConf 2022.pdf';
 
 export const CODE_OF_CONDUCT =
   'https://adalovedev.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6';

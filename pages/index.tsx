@@ -17,7 +17,8 @@
 import Page from '@components/page';
 import Layout from '@components/layout';
 import ConfContainer from '@components/conf-container';
-import { DATE, COMING_SOON } from '@lib/constants';
+import { DATE, DOSSIER } from '@lib/constants';
+import { ButtonLinkPrimary } from '@components/buttons/buttonLinkPrimary';
 
 export default function Conf() {
   const meta = {
@@ -33,11 +34,10 @@ export default function Conf() {
           <div className='homeInfo'>
             <img src='logowhite.png' />
             {DATE.toUpperCase()}
-            <p>{COMING_SOON.toUpperCase()}</p>
-            {/* <div className='callToActionContainer'>
+            <div className='callToActionContainer'>
               <ButtonLinkPrimary text="Call 4 paper" link='/call-for-paper' />
-              <ButtonLinkPrimary text="Dossier" isNewPage={true} link='/dossier_sponsors.pdf' />
-            </div> */}
+              <ButtonLinkPrimary text="Dossier" isNewPage={true} link={DOSSIER} />
+            </div>
           </div>
         </ConfContainer>
       </Layout>
