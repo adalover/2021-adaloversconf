@@ -1,5 +1,6 @@
 import Layout from "@components/layout";
 import Page from "@components/page";
+import { CALL_FOR_PAPER } from '@lib/constants';
 
 export default function CallForPaper() {
     const meta = {
@@ -11,7 +12,7 @@ export default function CallForPaper() {
         <Page meta={meta} fullViewport>
             <Layout hideNav={true}>
                 <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScfCaXaXW1fGAANZ2WD49AMCSMYcKqxzqkKNcqIik6iQJS69Q/viewform?embedded=true"
+                    src={CALL_FOR_PAPER}
                     width="640"
                     height="947"
                     frameBorder="0"
