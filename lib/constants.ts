@@ -27,13 +27,11 @@ export const SITE_DESCRIPTION =
   'AdaLoversConf21 evento online, visibilizando a mujeres del sector de desarrollo de software.';
 export const DATE = 'Septiembre 24, 2022';
 export const SHORT_DATE = 'Sep 24 - 5:00pm UTC+1';
-export const FULL_DATE = 'Sep 24th 5pm (UTC+1)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 export const EVENT_FORMAT = 'Online';
-export const COMING_SOON = '¡¡Próximamente más información!!';
 export const CALL_FOR_PAPER = 'https://forms.gle/pgTtB4k5wPdLDHVw6';
-export const DOSSIER = '/ES - Dossier AdaLoversConf 2022.pdf';
+export const DOSSIER = '/ES_Dossier_AdaLoversConf_2022.pdf';
 
 export const CODE_OF_CONDUCT =
   'https://adalovedev.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6';

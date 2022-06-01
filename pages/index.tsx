@@ -17,7 +17,7 @@
 import Page from '@components/page';
 import Layout from '@components/layout';
 import ConfContainer from '@components/conf-container';
-import { DATE, DOSSIER } from '@lib/constants';
+import { CALL_FOR_PAPER, DATE, DOSSIER } from '@lib/constants';
 import { ButtonLinkPrimary } from '@components/buttons/buttonLinkPrimary';
 
 export default function Conf() {
@@ -35,7 +35,7 @@ export default function Conf() {
             <img src='logowhite.png' />
             {DATE.toUpperCase()}
             <div className='callToActionContainer'>
-              <ButtonLinkPrimary text="Call 4 paper" link='/call-for-paper' />
+              <ButtonLinkPrimary text="Call 4 paper" link={CALL_FOR_PAPER} />
               <ButtonLinkPrimary text="Dossier" isNewPage={true} link={DOSSIER} />
             </div>
           </div>
