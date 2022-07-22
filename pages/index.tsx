@@ -17,13 +17,13 @@
 import Page from '@components/page';
 import Layout from '@components/layout';
 import ConfContainer from '@components/conf-container';
-import { CALL_FOR_PAPER, DATE, DOSSIER } from '@lib/constants';
+import { DATE, DOSSIER, SITE_NAME, YEAR } from '@lib/constants';
 import { ButtonLinkPrimary } from '@components/buttons/buttonLinkPrimary';
 
 export default function Conf() {
   const meta = {
-    title: 'AdaLoversConf',
-    description: 'Evento AdaLoversConf 2021',
+    title: SITE_NAME,
+    description: `Evento ${SITE_NAME} ${YEAR}`,
     image: 'AdaLovelace.jpg'
   };
 

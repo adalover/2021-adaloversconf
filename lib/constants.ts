@@ -18,14 +18,15 @@ export const SITE_URL = 'https://adaloversconf.es';
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin;
 export const TWITTER_USER_NAME = 'adalovedev';
 export const BRAND_NAME = 'AdaLoversConf';
-export const YEAR = '2021';
+export const YEAR = '2022';
 export const SITE_NAME_MULTILINE = ['AdaLoversConf', 'Conf'];
 export const SITE_NAME = 'AdaLoversConf';
+export const EVENT_NAME = SITE_NAME + '22';
 export const META_DESCRIPTION =
   'Web del evento con toda la información del mismo. Aquí puedes ver horarios, charlas y conocer a las ponentes con las que contaremos.';
 export const SITE_DESCRIPTION =
-  'AdaLoversConf21 evento online, visibilizando a mujeres del sector de desarrollo de software.';
-export const DATE = 'Septiembre 24, 2022';
+  EVENT_NAME + ' evento online, visibilizando a mujeres del sector de desarrollo de software.';
+export const DATE = `Septiembre 24, ${YEAR}`;
 export const SHORT_DATE = 'Sep 24 - 5:00pm UTC+1';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
