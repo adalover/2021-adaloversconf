@@ -35,7 +35,6 @@ export default function Conf() {
             <img src='logowhite.png' />
             {DATE.toUpperCase()}
             <div className='callToActionContainer'>
-              <ButtonLinkPrimary text="Call 4 paper" link={CALL_FOR_PAPER} />
               <ButtonLinkPrimary text="Dossier" isNewPage={true} link={DOSSIER} />
             </div>
           </div>
