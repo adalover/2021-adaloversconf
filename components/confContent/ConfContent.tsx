@@ -14,24 +14,13 @@
  * limitations under the License.
  */
 
-import Page from '@components/page';
-import { ConfContent } from '@components/confContent/ConfContent';
-import { SITE_NAME, YEAR } from '@lib/constants';
-import { SkipNavContent } from '@reach/skip-nav';
+import Layout from '../layout';
+import ConfContainer from '../conf-container';
+import { Hero } from '@components/hero/hero';
 
-const Conf = () => {
-  const meta = {
-    title: SITE_NAME,
-    description: `Evento ${SITE_NAME} ${YEAR}`,
-    image: 'AdaLovelace.jpg'
-  };
-
-  return (
-    <Page meta={meta} fullViewport>
-      <SkipNavContent />
-      <ConfContent />
-    </Page>
-  );
-};
-
-export default Conf;
+export const ConfContent = () => <Layout>
+  <ConfContainer>
+    {/*<HeroVideo />*/}
+    <Hero />
+  </ConfContainer>
+</Layout>;

@@ -18,6 +18,8 @@
   "dependencies": {
     "@agility/content-fetch": "1.0.0",
     "@agility/content-sync": "0.1.23",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@reach/skip-nav": "0.12.1",
     "chrome-aws-lambda": "5.5.0",
     "classnames": "2.2.6",

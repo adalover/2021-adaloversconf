@@ -15,8 +15,8 @@
  */
 
 .background {
-  background: var(--primary-color);
-  color: #000;
+  background: var(--white);
+  color: var(--secondary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -14,24 +14,18 @@
  * limitations under the License.
  */
 
-import Page from '@components/page';
-import { ConfContent } from '@components/confContent/ConfContent';
-import { SITE_NAME, YEAR } from '@lib/constants';
-import { SkipNavContent } from '@reach/skip-nav';
+import { DATE } from '@lib/constants';
+import { FC } from 'react';
+import { Info } from '@components/hero/info';
+import { Title } from '@components/hero/title';
+import styled from '@emotion/styled';
 
-const Conf = () => {
-  const meta = {
-    title: SITE_NAME,
-    description: `Evento ${SITE_NAME} ${YEAR}`,
-    image: 'AdaLovelace.jpg'
-  };
+const Container = styled.div`
+  margin-top: var(--space-12x);
+`;
 
-  return (
-    <Page meta={meta} fullViewport>
-      <SkipNavContent />
-      <ConfContent />
-    </Page>
-  );
-};
-
-export default Conf;
+export const Hero: FC = () => <Container>
+  <Title text="AdaLoversConf" />
+  <Info date={DATE} place="ESIT - Universidad de La Laguna" />
+  {/*<Details text="Próximamente más información" />*/}
+</Container>;
