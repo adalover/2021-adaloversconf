@@ -20,11 +20,16 @@ import cn from 'classnames';
 import { Sponsor } from '@lib/types';
 import styles from './sponsors-grid.module.css';
 
+const trim = (description: string): string =>
+  description.length > 250
+    ? `${description.slice(0, 250)}…`
+    : description;
+
 function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
   return (
     <Link key={sponsor.name} href={`/expo/${sponsor.slug}`}>
       <a
-        role="button"
+        role='button'
         tabIndex={0}
         className={cn(styles.card, {
           [styles.diamond]: sponsor.tier === 'diamond',
@@ -38,7 +43,7 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
             className={cn(styles.image, {
               [styles.silver]: sponsor.tier === 'silver'
             })}
-            loading="lazy"
+            loading='lazy'
             title={sponsor.name}
             width={900}
             height={500}
@@ -48,7 +53,7 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
           <div className={styles.cardBody}>
             <div>
               <h2 className={styles.name}>{sponsor.name}</h2>
-              <p className={styles.description}>{sponsor.description}</p>
+              <p className={styles.description}>{trim(sponsor.description)}</p>
             </div>
           </div>
         )}
