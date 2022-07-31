@@ -30,12 +30,12 @@ export const NAVIGATION = [
   {
     name: 'Colaboradores',
     route: '/expo',
-    hide: true
+    hide: false
   },
   {
     name: 'Ponentes',
     route: '/speakers',
-    hide: true
+    hide: false
   },
   {
     name: 'Horarios',

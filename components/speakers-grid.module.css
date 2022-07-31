@@ -29,10 +29,9 @@
   scrollbar-width: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .grid {
     padding: 0 var(--space-8x);
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
 }
 
