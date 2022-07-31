@@ -99,7 +99,7 @@
 
 .image {
   overflow: hidden;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   width: var(--space-16x);
   height: var(--space-16x);
   min-width: var(--space-16x);
