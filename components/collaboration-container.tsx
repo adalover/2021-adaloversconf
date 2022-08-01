@@ -19,24 +19,21 @@ import cn from 'classnames';
 import commonStyles from './sponsor-section.module.css';
 import styles from './collaboration-section.module.css';
 import styleUtils from './utils.module.css';
-import { COLLABORATION_DESCRIPTION } from '@lib/staticsText';
 
 export default function CollaborationSection() {
-  const collaborator = {
-    name: 'Ámate',
-    youtube: `https://www.youtube.com/embed/MIH5UFsl6Hg`,
-    logo: { url: '/logo_amate_15_años-01_color.png' },
-    description: COLLABORATION_DESCRIPTION,
-    callToActionLink: 'https://www.ecoentradas.com/elegirsesion/611',
-    callToAction: '¡Dona!',
+  const rrss = {
     links: [{
-      url: 'https://amate-tenerife.com/',
-      text: 'Web'
+      url: 'https://twitter.com/adalovedev',
+      text: 'Twitter'
     }, {
-      url: 'https://www.instagram.com/amate_asociacion/',
+      url: 'https://www.instagram.com/adalovedev/',
       text: 'Instagram'
+    },  {
+      url: 'https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos',
+      text: 'YouTube'
     }]
   };
+
   return (
     <>
       <div className={commonStyles.layout}>
@@ -46,39 +43,42 @@ export default function CollaborationSection() {
           allowFullScreen
           frameBorder='0'
           height='100%'
-          src={collaborator.youtube}
-          title={collaborator.name}
+          src="https://youtube.com/embed/Fz2RdjA8-Uc"
+          title="AdaLoversConf 22"
           width='100%'
         />
         <div className={styles.container}>
           <div className={commonStyles['name-and-logo']}>
             <Image
-              alt={collaborator.name}
-              src={collaborator.logo.url}
+              alt="AdaLoversConf 22"
+              src="/soloLogo.png"
               className={commonStyles.image}
               loading='lazy'
-              title={collaborator.name}
+              title="AdaLoversConf 22"
               height={64}
               width={64}
               objectFit='scale-down'
             />
-            <h1 className={commonStyles.name}>{collaborator.name}</h1>
+            <h1 className={commonStyles.name}>AdaLoversConf 22</h1>
           </div>
-          <p className={commonStyles.description}>{collaborator.description}</p>
+          <p className={commonStyles.description}>¡Volvemos a vernos en presencial! 🙌</p>
+          <p className={commonStyles.description}>La comunidad AdaLoveDev organizamos este evento cada año con el objetivo de visibilizar a la mujer en el sector tecnológico. Nuestra comunidad de desarrolladoras, entre sus múltiples propósitos, tiene el de dar a conocer el talento tecnológico  femenino que existe en las Islas Canarias.👩‍💻</p>
+          <p className={commonStyles.description}>AdaLoversConf es un evento abierto a todo el público y, en él, podrás compartir conocimiento, hacer networking, e incluso venir con tu familia. Además, este año hemos apostado por hacerlo lo más eco friendly posible.🪴</p>
+          <p className={commonStyles.description}>¿Te lo vas a perder?</p>
           <div className={commonStyles['sponsor-details']}>
             <a
-              href={collaborator.callToActionLink}
+              href="https://www.tomaticket.es/es-es/entradas-adaloversconf"
               target='_blank'
               rel='noopener noreferrer'
               type='button'
               className={commonStyles.button}
             >
-              {collaborator.callToAction}
+              ¡Compra tu entrada!
             </a>
           </div>
           <div className={commonStyles.resources}>
-            <h2 className={commonStyles.heading}>Resources</h2>
-            {collaborator.links.map(link => (
+            <h2 className={commonStyles.heading}>Links</h2>
+            {rrss.links.map(link => (
               <a
                 key={link.url}
                 href={link.url}

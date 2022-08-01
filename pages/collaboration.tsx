@@ -18,7 +18,7 @@ import Page from '@components/page';
 import Layout from '@components/layout';
 import CollaborationSection from '@components/collaboration-container';
 import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from '@lib/staticsText';
-
+//TODO change collaboration to event
 export default function CollaborationPage() {
   const meta = {
     title: COLLABORATION_TITLE,

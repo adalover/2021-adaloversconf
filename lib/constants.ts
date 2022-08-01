@@ -23,9 +23,9 @@ export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
 export const NAVIGATION = [
   {
-    name: 'Colaboración',
-    route: '/collaboration',
-    hide: true
+    name: 'El evento',
+    route: '/collaboration', //TODO Change to event
+    hide: false
   },
   {
     name: 'Colaboradores',
