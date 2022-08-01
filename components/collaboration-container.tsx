@@ -28,9 +28,12 @@ export default function CollaborationSection() {
     }, {
       url: 'https://www.instagram.com/adalovedev/',
       text: 'Instagram'
-    },  {
+    }, {
       url: 'https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos',
       text: 'YouTube'
+    }, {
+      url: '/ES_Dossier_AdaLoversConf_2022',
+      text: 'Dossier'
     }]
   };
 
