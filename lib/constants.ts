@@ -17,7 +17,7 @@ export const CALL_FOR_PAPER = 'https://forms.gle/pgTtB4k5wPdLDHVw6';
 export const DOSSIER = '/ES_Dossier_AdaLoversConf_2022.pdf';
 
 export const CODE_OF_CONDUCT =
-  'https://adalovedev.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6';
+  '';
 export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
@@ -58,7 +58,6 @@ export const NAVIGATION = [
 export const SAMPLE_TICKET_NUMBER = 1234;
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
 // strings containing your own privacy policy URL and copyright holder name
-export const LEGAL_URL = process.env.NEXT_PUBLIC_PRIVACY_POLICY_URL;
 export const COPYRIGHT_HOLDER = process.env.NEXT_PUBLIC_COPYRIGHT_HOLDER;
 
 

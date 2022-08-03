@@ -32,7 +32,7 @@
 }
 
 .footer-link:hover {
-  color: var(--white);
+  color: var(--brand);
 }
 
 .footer-logo :global(svg) {
