@@ -30,7 +30,7 @@ export const SOCIAL_NET_LINKS = {
 export const NAVIGATION = [
   {
     name: 'El evento',
-    route: '/collaboration', //TODO Change to event
+    route: '/event',
     hide: false
   },
   {

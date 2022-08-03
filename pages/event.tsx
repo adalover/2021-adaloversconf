@@ -16,10 +16,10 @@
 
 import Page from '@components/page';
 import Layout from '@components/layout';
-import CollaborationSection from '@components/collaboration-container';
+import EventSection from '@components/event/event-container';
 import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from '@lib/staticsText';
 //TODO change collaboration to event
-export default function CollaborationPage() {
+export default function EventPage() {
   const meta = {
     title: COLLABORATION_TITLE,
     description: COLLABORATION_DESCRIPTION
@@ -28,7 +28,7 @@ export default function CollaborationPage() {
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <CollaborationSection />
+        <EventSection />
       </Layout>
     </Page>
   );

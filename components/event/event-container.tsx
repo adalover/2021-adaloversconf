@@ -16,14 +16,14 @@
 
 import Image from 'next/image';
 import cn from 'classnames';
-import commonStyles from './sponsor-section.module.css';
-import styles from './collaboration-section.module.css';
-import styleUtils from './utils.module.css';
+import commonStyles from '../sponsor-section.module.css';
+import styles from './event-section.module.css';
+import styleUtils from '../utils.module.css';
 import styled from '@emotion/styled';
-import { SocialNets } from './socialNets';
+import { SocialNets } from '../socialNets';
 import { DOSSIER, EVENT_NAME } from '@lib/constants';
-import { ButtonSecondary } from './buttons/buttonSecondary';
-import { ButtonTertiary } from './buttons/buttonTertiary';
+import { ButtonSecondary } from '../buttons/buttonSecondary';
+import { ButtonTertiary } from '../buttons/buttonTertiary';
 
 const ButtonList = styled.li`
   margin: 1rem 0;
@@ -32,7 +32,7 @@ const ButtonList = styled.li`
   gap: 1rem;
 `;
 
-export default function CollaborationSection() {
+export default function EventSection() {
   return (
     <>
       <div className={commonStyles.layout}>
