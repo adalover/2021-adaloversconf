@@ -16,7 +16,7 @@
 
 import Page from '@components/page';
 import Layout from '@components/layout';
-import AllianceSection from '@components/event/alliance-container';
+import AllianceSection from '@components/alliance/alliance-container';
 
 export default function AlliancePage() {
   const meta = {

@@ -21,7 +21,6 @@ import styles from './alliance-section.module.css';
 import styleUtils from '../utils.module.css';
 import styled from '@emotion/styled';
 import { SocialNetworks } from '../social-networks/social-networks';
-import { EVENT_NAME } from '@lib/constants';
 import { ButtonSecondary } from '../buttons/buttonSecondary';
 
 const ButtonList = styled.li`
@@ -52,7 +51,7 @@ export default function AllianceSection() {
               src='/GIT_Spain_Black.png'
               className={commonStyles.image}
               loading='lazy'
-              title={EVENT_NAME}
+              title='Girls in Tech España'
               height={64}
               width={64}
               objectFit='scale-down'
