@@ -4,7 +4,6 @@ import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-
 import { FC } from 'react';
 
 const SocialNetsStyle = styled.li`
-  height: 100%;
   display: flex;
   flex-direction: row;
   gap: 3rem;

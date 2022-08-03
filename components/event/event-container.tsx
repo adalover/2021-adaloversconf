@@ -26,7 +26,7 @@ import { ButtonSecondary } from '../buttons/buttonSecondary';
 import { ButtonTertiary } from '../buttons/buttonTertiary';
 
 const ButtonList = styled.li`
-  margin: 1rem 0;
+  margin: 3rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -71,12 +71,12 @@ export default function EventSection() {
           <p className={commonStyles.description}>¿Te lo vas a perder?</p>
           <ButtonList>
             <ButtonSecondary text='¡Compra tu entrada!'
-                             action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
+              action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
             <ButtonTertiary text='Dossier' action={() => window.open(DOSSIER, '_blank')} />
           </ButtonList>
           <SocialNetworks twitter='https://twitter.com/adalovedev'
-                          instagram='https://www.instagram.com/adalovedev/'
-                          youtube='https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos' />
+            instagram='https://www.instagram.com/adalovedev/'
+            youtube='https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos' />
         </div>
       </div>
     </>
