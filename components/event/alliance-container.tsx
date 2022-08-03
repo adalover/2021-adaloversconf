@@ -17,13 +17,12 @@
 import Image from 'next/image';
 import cn from 'classnames';
 import commonStyles from '../sponsor-section.module.css';
-import styles from './event-section.module.css';
+import styles from './alliance-section.module.css';
 import styleUtils from '../utils.module.css';
 import styled from '@emotion/styled';
-import { SocialNets } from '../socialNets';
-import { DOSSIER, EVENT_NAME } from '@lib/constants';
+import { SocialNetworks } from '../social-networks/social-networks';
+import { EVENT_NAME } from '@lib/constants';
 import { ButtonSecondary } from '../buttons/buttonSecondary';
-import { ButtonTertiary } from '../buttons/buttonTertiary';
 
 const ButtonList = styled.li`
   margin: 1rem 0;
@@ -32,7 +31,7 @@ const ButtonList = styled.li`
   gap: 1rem;
 `;
 
-export default function EventSection() {
+export default function AllianceSection() {
   return (
     <>
       <div className={commonStyles.layout}>
@@ -42,15 +41,15 @@ export default function EventSection() {
           allowFullScreen
           frameBorder='0'
           height='100%'
-          src="https://youtube.com/embed/Fz2RdjA8-Uc"
-          title={EVENT_NAME}
+          src='https://youtube.com/embed/bwee_WWaJ5w'
+          title='Girls in Tech Spain'
           width='100%'
         />
         <div className={styles.container}>
           <div className={commonStyles['name-and-logo']}>
             <Image
-              alt={EVENT_NAME}
-              src="/soloLogo.png"
+              alt='Girls in Tech Spain'
+              src='/GIT_Spain_Black.png'
               className={commonStyles.image}
               loading='lazy'
               title={EVENT_NAME}
@@ -58,17 +57,18 @@ export default function EventSection() {
               width={64}
               objectFit='scale-down'
             />
-            <h1 className={commonStyles.name}>AdaLoversConf 22</h1>
+            <h1 className={commonStyles.name}>Girls in Tech España</h1>
           </div>
-          <p className={commonStyles.description}>¡Volvemos a vernos en presencial! 🙌</p>
-          <p className={commonStyles.description}>La comunidad AdaLoveDev organizamos este evento cada año con el objetivo de visibilizar a la mujer en el sector tecnológico. Nuestra comunidad de desarrolladoras, entre sus múltiples propósitos, tiene el de dar a conocer el talento tecnológico  femenino que existe en las Islas Canarias.👩‍💻</p>
-          <p className={commonStyles.description}>AdaLoversConf es un evento abierto a todo el público y, en él, podrás compartir conocimiento, hacer networking, e incluso venir con tu familia. Además, este año hemos apostado por hacerlo lo más eco friendly posible.🪴</p>
-          <p className={commonStyles.description}>¿Te lo vas a perder?</p>
+          <p className={commonStyles.description}>La tecnología nos necesita. Y nos necesitamos el uno al otro. </p>
+          <p className={commonStyles.description}>Somos un grupo de personas en España, desde novatos hasta expertos,
+            que están comprometidos a apoyar a las mujeres en la tecnología aquí mismo, donde vivimos.</p>
           <ButtonList>
-            <ButtonSecondary text='¡Compra tu entrada!' action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
-            <ButtonTertiary text='Dossier' action={() => window.open(DOSSIER, '_blank')} />
+            <ButtonSecondary text='¡Más información!'
+                             action={() => window.open('https://spain.girlsintech.org/', '_blank')} />
           </ButtonList>
-          <SocialNets />
+          <SocialNetworks twitter='https://twitter.com/GirlsinTechES'
+                          instagram='https://www.instagram.com/girlsintech.global/'
+                          youtube='https://www.youtube.com/channel/UCIHdXlugHZMHpd8qRDPKvGQ/' />
         </div>
       </div>
     </>

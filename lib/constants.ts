@@ -21,12 +21,6 @@ export const CODE_OF_CONDUCT =
 export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
-export const SOCIAL_NET_LINKS = {
-  twitter: 'https://twitter.com/adalovedev',
-  instagram: 'https://www.instagram.com/adalovedev/',
-  youtube: 'https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos'
-}
-
 export const NAVIGATION = [
   {
     name: 'El evento',
@@ -47,6 +41,11 @@ export const NAVIGATION = [
     name: 'Horarios',
     route: '/schedule',
     hide: true
+  },
+  {
+    name: 'Alianza',
+    route: '/alliance',
+    hide: false
   },
   {
     name: 'En directo',

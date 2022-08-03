@@ -1,7 +1,7 @@
-import { SOCIAL_NET_LINKS } from '@lib/constants';
 import styled from '@emotion/styled';
-import { Icon } from './icon';
+import { Icon } from '../icon';
 import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FC } from 'react';
 
 const SocialNetsStyle = styled.li`
   height: 100%;
@@ -18,15 +18,21 @@ const Link = styled.a`
   }
 `;
 
-export const SocialNets = () =>
+interface SocialNetworksProps {
+  twitter: string;
+  instagram: string;
+  youtube: string;
+}
+
+export const SocialNetworks: FC<SocialNetworksProps> = ({ twitter, instagram, youtube }) =>
   <SocialNetsStyle>
-    <Link href={SOCIAL_NET_LINKS.twitter} title='Twitter' target='_blank'>
+    <Link href={twitter} title='Twitter' target='_blank'>
       <Icon icon={faTwitter} />
     </Link>
-    <Link href={SOCIAL_NET_LINKS.instagram} title='Instagram' target='_blank'>
+    <Link href={instagram} title='Instagram' target='_blank'>
       <Icon icon={faInstagram} />
     </Link>
-    <Link href={SOCIAL_NET_LINKS.youtube} title='Youtube' target='_blank'>
+    <Link href={youtube} title='Youtube' target='_blank'>
       <Icon icon={faYoutube} />
     </Link>
-  </SocialNetsStyle>
+  </SocialNetsStyle>;

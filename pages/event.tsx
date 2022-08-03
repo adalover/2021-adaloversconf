@@ -16,13 +16,18 @@
 
 import Page from '@components/page';
 import Layout from '@components/layout';
-import EventSection from '@components/event/event-container';
-import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from '@lib/staticsText';
-//TODO change collaboration to event
+import EventSection from '@components/event/alliance-container';
+
 export default function EventPage() {
   const meta = {
-    title: COLLABORATION_TITLE,
-    description: COLLABORATION_DESCRIPTION
+    title: "AdaLoversConf 22",
+    description: "¡Volvemos a vernos en presencial! 🙌\n" +
+      "\n" +
+      "La comunidad AdaLoveDev organizamos este evento cada año con el objetivo de visibilizar a la mujer en el sector tecnológico. Nuestra comunidad de desarrolladoras, entre sus múltiples propósitos, tiene el de dar a conocer el talento tecnológico  femenino que existe en las Islas Canarias.👩‍💻\n" +
+      "\n" +
+      "AdaLoversConf es un evento abierto a todo el público y, en él, podrás compartir conocimiento, hacer networking, e incluso venir con tu familia. Además, este año hemos apostado por hacerlo lo más eco friendly posible.🪴\n" +
+      "\n" +
+      "¿Te lo vas a perder?"
   };
 
   return (

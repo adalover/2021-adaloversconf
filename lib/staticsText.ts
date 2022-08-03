@@ -11,9 +11,3 @@ export const SPEAKERS_DESCRIPTION = 'Las ponentes con las que contaremos en esta
 export const SCHEDULE_NAME = 'Horarios';
 export const SCHEDULE_TITLE = 'Horarios - ' + EVENT_NAME;
 export const SCHEDULE_DESCRIPTION = 'Aquí encontrarás toda la información de las charlas del evento. No lo olvides 24 de septiembre a las 17:00 🇮🇨 (UTC+1).';
-
-export const COLLABORATION_NAME = 'Colaboración';
-export const COLLABORATION_TITLE = 'Colaboración - ' + EVENT_NAME;
-export const COLLABORATION_DESCRIPTION = 'Este año estamos muy contentas de poder colaborar con una asociación como Ámate, una asociación que luchan contra el cáncer de mama en Tenerife. ' +
-  'Así que TODO lo que recaudaremos irá destinado a esta asociación. ' +
-  '¿Te gustaría aportar tu granito de arena a esta gran causa? Simplemente compra tu entrada simbólica al evento, ¡anímate!';
