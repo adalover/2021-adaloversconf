@@ -75,7 +75,10 @@ export async function getAllSpeakers(): Promise<Speaker[]> {
       imageSquare: {
         url: `${speaker.fields.image.url}?w=192&h=192&c=1`
       },
-      talk
+      talk,
+      oneliner: speaker.fields.oneliner,
+      linkedin: speaker.fields.linkedin,
+      webBlog: speaker.fields.webBlog
     });
   });
 
@@ -154,7 +157,6 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
 
     lst.push({
       name: company.fields.name,
-      discord: company.fields.discord,
       slug: company.fields.slug,
       website: company.fields.website,
       callToAction: company.fields.callToAction.text,
@@ -168,7 +170,8 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
       logo: {
         url: `${company.fields.logo.url}`
       },
-      links
+      links,
+      tierRank: company.fields.tierRank
     });
   });
 
@@ -220,9 +223,8 @@ const getSyncClient = (context: any) => {
     return null;
   }
 
-  let cachePath = `node_modules/@agility/content-sync/cache/${agilityConfig.guid}/${
-    isPreview ? 'preview' : 'live'
-  }`;
+  let cachePath = `node_modules/@agility/content-sync/cache/${agilityConfig.guid}/${isPreview ? 'preview' : 'live'
+    }`;
 
   if (!isDevelopmentMode) {
     cachePath = `/tmp/agilitycache/${agilityConfig.guid}/${isPreview ? 'preview' : 'live'}`;
