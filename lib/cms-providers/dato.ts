@@ -46,10 +46,13 @@ export async function getAllSpeakers(): Promise<Speaker[]> {
     {
       allSpeakers(first: 100) {
         name
+        oneliner
         bio
         title
         slug
         twitter
+        linkedin
+        webBlog
         github
         company
         talk {
@@ -107,6 +110,7 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
         callToActionLink
         youtubeSlug
         tier
+        tierRank
         links {
           url
           text
