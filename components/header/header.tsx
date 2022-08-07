@@ -14,29 +14,41 @@
  * limitations under the License.
  */
 
-.hero {
+import styled from '@emotion/styled';
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const Title = styled.h1`
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.05em;
   font-weight: 800;
   margin: var(--space-8x) 24px var(--space-2x);
-}
 
-.description {
+  @media (min-width: 768px) {
+    font-size: 40px;
+    margin: var(--space-16x) var(--space-8x) var(--space-4x);
+  }
+`;
+
+const Description = styled.p`
   font-size: var(--text-md);
   line-height: 1.4;
   color: var(--tertiary-color);
   margin-top: 0;
   margin-left: 24px;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    font-size: 40px;
-    margin: var(--space-16x) var(--space-8x) var(--space-4x);
-  }
-
-  .description {
+  @media (min-width: 768px) {
     margin-left: var(--space-8x);
   }
-}
+`;
+
+
+export const Header = ({ title, description }: Props) => (
+  <>
+    <Title>{title}</Title>
+    {description && <Description>{description}</Description>}
+  </>
+);
