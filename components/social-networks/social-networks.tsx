@@ -1,9 +1,18 @@
 import styled from '@emotion/styled';
-import { Icon } from '../icon';
-import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FC } from 'react';
+import { Network } from '@components/social-networks/Network';
 
-const SocialNetsStyle = styled.li`
+interface SocialNetworksProps {
+  twitter?: string;
+  linkedin?: string;
+  instagram?: string;
+  youtube?: string;
+  twitch?: string;
+  github?: string;
+}
+
+const Container = styled.li`
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -11,27 +20,12 @@ const SocialNetsStyle = styled.li`
   justify-content: center;
 `;
 
-const Link = styled.a`
-  :hover svg {
-    color: var(--tertiaray-color);
-  }
-`;
-
-interface SocialNetworksProps {
-  twitter: string;
-  instagram: string;
-  youtube: string;
-}
-
-export const SocialNetworks: FC<SocialNetworksProps> = ({ twitter, instagram, youtube }) =>
-  <SocialNetsStyle>
-    <Link href={twitter} title='Twitter' target='_blank'>
-      <Icon icon={faTwitter} />
-    </Link>
-    <Link href={instagram} title='Instagram' target='_blank'>
-      <Icon icon={faInstagram} />
-    </Link>
-    <Link href={youtube} title='Youtube' target='_blank'>
-      <Icon icon={faYoutube} />
-    </Link>
-  </SocialNetsStyle>;
+export const SocialNetworks: FC<SocialNetworksProps> = ({ twitter, linkedin, instagram, youtube, twitch, github }) =>
+  <Container>
+    {twitter && <Network network='Twitter' url={twitter} icon={faTwitter} />}
+    {linkedin && <Network network='Twitter' url={linkedin} icon={faLinkedin} />}
+    {instagram && <Network network='Twitter' url={instagram} icon={faInstagram} />}
+    {youtube && <Network network='Twitter' url={youtube} icon={faYoutube} />}
+    {twitch && <Network network='Twitter' url={twitch} icon={faTwitch} />}
+    {github && <Network network='Twitter' url={github} icon={faGithub} />}
+  </Container>;
