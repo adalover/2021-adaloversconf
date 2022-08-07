@@ -63,23 +63,23 @@ export async function getAllSpeakers(): Promise<Speaker[]> {
 
     lst.push({
       name: speaker.fields.name,
-      title: speaker.fields.title,
+      oneliner: speaker.fields.oneliner,
       bio: speaker.fields.bio,
+      title: speaker.fields.title,
       slug: speaker.fields.slug,
       twitter: speaker.fields.twitter,
+      linkedin: speaker.fields.linkedin,
+      webBlog: speaker.fields.webBlog,
       github: speaker.fields.github,
       company: speaker.fields.company.fields.name,
+      talk,
       image: {
         url: `${speaker.fields.image.url}?w=300&h=400&c=1`
       },
       imageSquare: {
         url: `${speaker.fields.image.url}?w=192&h=192&c=1`
-      },
-      talk,
-      oneliner: speaker.fields.oneliner,
-      linkedin: speaker.fields.linkedin,
-      webBlog: speaker.fields.webBlog
-    });
+      }
+    } as Speaker);
   });
 
   return lst.sort((a, b) => (a.name > b.name ? 1 : -1));
