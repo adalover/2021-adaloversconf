@@ -22,9 +22,8 @@ import Layout from '@components/layout';
 
 import { getAllSponsors } from '@lib/cms-api';
 import { Sponsor } from '@lib/types';
-import { META_DESCRIPTION } from '@lib/constants';
-import styles from '@components/sponsors/sponsor-section.module.css';
-import Link from 'next/link';
+import { EVENT_NAME, META_DESCRIPTION } from '@lib/constants';
+import { BackLink } from '@components/backLink/BackLink';
 
 type Props = {
   sponsor: Sponsor;
@@ -32,31 +31,14 @@ type Props = {
 
 export default function SponsorPage({ sponsor }: Props) {
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: EVENT_NAME,
     description: META_DESCRIPTION
   };
 
   return (
     <Page meta={meta}>
       <Layout>
-        <Link href='/expo'>
-          <a className={styles.backlink}>
-            <svg
-              viewBox='0 0 24 24'
-              width='24'
-              height='24'
-              stroke='currentColor'
-              strokeWidth='1.5'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              fill='none'
-              shapeRendering='geometricPrecision'
-            >
-              <path d='M15 18l-6-6 6-6' />
-            </svg>
-            Volver a sponsors
-          </a>
-        </Link>
+        <BackLink text='Volver a empresas colaboradoras' url='/expo' />
         <SponsorSection sponsor={sponsor} />
       </Layout>
     </Page>
