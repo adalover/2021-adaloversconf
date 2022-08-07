@@ -66,7 +66,7 @@ export type Sponsor = {
   tier: string;
   cardImage: Image;
   logo: Image;
-  youtubeSlug: string;
+  youtubeSlug?: string;
 };
 
 export type SponsorLink = {

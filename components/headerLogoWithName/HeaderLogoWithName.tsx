@@ -1,13 +1,12 @@
 import React, { FC } from 'react';
 import Image from 'next/image';
-import { EVENT_NAME } from '@lib/constants';
-import commonStyles from '@components/sponsors/sponsor-section.module.css';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: var(--space-2x);
 
   & > h1 {
     font-weight: 800;
@@ -25,19 +24,19 @@ const Container = styled.div`
 interface LogoWithNameProps {
   src: string;
   name: string;
+  alt?: string;
 }
 
-export const HeaderLogoWithName: FC<LogoWithNameProps> = ({ src, name }) => {
+export const HeaderLogoWithName: FC<LogoWithNameProps> = ({ src, name, alt }) => {
   return <Container>
     <Image
-      alt={EVENT_NAME}
+      alt={alt}
       src={src}
-      className={commonStyles.image}
       loading='lazy'
-      title={EVENT_NAME}
+      title={alt}
       height={64}
       width={64}
-      objectFit='scale-down'
+      objectFit='contain'
     />
     <h1>{name}</h1>
   </Container>;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Page from '@components/page';
 import { SponsorSection } from '@components/sponsors/sponsor-section';
@@ -23,6 +23,8 @@ import Layout from '@components/layout';
 import { getAllSponsors } from '@lib/cms-api';
 import { Sponsor } from '@lib/types';
 import { META_DESCRIPTION } from '@lib/constants';
+import styles from '@components/sponsors/sponsor-section.module.css';
+import Link from 'next/link';
 
 type Props = {
   sponsor: Sponsor;
@@ -37,6 +39,24 @@ export default function SponsorPage({ sponsor }: Props) {
   return (
     <Page meta={meta}>
       <Layout>
+        <Link href='/expo'>
+          <a className={styles.backlink}>
+            <svg
+              viewBox='0 0 24 24'
+              width='24'
+              height='24'
+              stroke='currentColor'
+              strokeWidth='1.5'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              fill='none'
+              shapeRendering='geometricPrecision'
+            >
+              <path d='M15 18l-6-6 6-6' />
+            </svg>
+            Volver a sponsors
+          </a>
+        </Link>
         <SponsorSection sponsor={sponsor} />
       </Layout>
     </Page>

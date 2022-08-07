@@ -14,19 +14,13 @@
  * limitations under the License.
  */
 
-import Link from 'next/link';
-import Image from 'next/image';
-import cn from 'classnames';
 import { Sponsor } from '@lib/types';
 import styles from './sponsor-section.module.css';
-import styleUtils from '../utils.module.css';
 import { SponsorSocialNetworks } from '@components/sponsors/SponsorSocialNetworks';
 import { FC } from 'react';
 import styled from '@emotion/styled';
-
-type Props = {
-  sponsor: Sponsor;
-};
+import { HeaderLogoWithName } from '@components/headerLogoWithName/HeaderLogoWithName';
+import { VideoSection } from '@components/videoSection/VideoSection';
 
 interface CallToActionProps {
   callToAction: string;
@@ -40,68 +34,51 @@ const Container = styled.div`
   color: var(--accents-2);
 `;
 
-const CallToAction: FC<CallToActionProps> = ({ callToAction, link }) =>
-  <Container>
-  <a
-    href={link}
-    target='_blank'
-    rel='noopener noreferrer'
-    type='button'
-    className={styles.button}
-  >
-    {callToAction}
-  </a>
+const ContainerDescription = styled.div`
+  width: 100%;
+  max-height: 450px;
+  height: 450px;
+`;
+
+const BodyContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+    align-items: center;
+  }
+`;
+
+const CallToAction: FC<CallToActionProps> = ({ callToAction, link }) => {
+  console.log({ callToAction, link });
+  return <Container>
+    <a
+      href={link}
+      target='_blank'
+      rel='noopener noreferrer'
+      type='button'
+      className={styles.button}
+    >
+      {callToAction}
+    </a>
   </Container>;
+};
 
-export const SponsorSection = ({ sponsor }: Props) => (
-  <>
-    <Link href='/expo'>
-      <a className={styles.backlink}>
-        <svg
-          viewBox='0 0 24 24'
-          width='24'
-          height='24'
-          stroke='currentColor'
-          strokeWidth='1.5'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-          fill='none'
-          shapeRendering='geometricPrecision'
-        >
-          <path d='M15 18l-6-6 6-6' />
-        </svg>
-        Volver a sponsors
-      </a>
-    </Link>
-    <div className={styles.layout}>
-      <iframe
-        className={cn(styles.video, styleUtils.appear, styleUtils['appear-first'])}
-        allow='picture-in-picture'
-        allowFullScreen
-        frameBorder='0'
-        height='100%'
-        src={`https://youtube.com/embed/${sponsor.youtubeSlug}`}
-        title={sponsor.name}
-        width='100%'
-      />
-      <div className={styles.container}>
-        <div className={styles['name-and-headerLogoWithName']}>
-          <Image
-            alt={sponsor.name}
-            src={sponsor.logo.url}
-            className={styles.image}
-            loading='lazy'
-            title={sponsor.name}
-            height={64}
-            width={64}
-          />
-          <h1 className={styles.name}>{sponsor.name}</h1>
-        </div>
-        <p className={styles.description}>{sponsor.description}</p>
+type Props = {
+  sponsor: Sponsor;
+};
 
-        <CallToAction callToAction={sponsor.callToAction} link={sponsor.callToActionLink} />
-        <SponsorSocialNetworks links={sponsor.links} />
-      </div>
-    </div>
-  </>
-);
+export const SponsorSection: FC<Props> = ({ sponsor }) => {
+  return <BodyContainer>
+    <ContainerDescription>
+      <HeaderLogoWithName src={sponsor.logo.url} name={sponsor.name} />
+      <p className={styles.description}>{sponsor.description}</p>
+      <CallToAction callToAction={sponsor.callToAction} link={sponsor.callToActionLink} />
+      <SponsorSocialNetworks links={sponsor.links} />
+    </ContainerDescription>
+    {sponsor.youtubeSlug && <VideoSection title={sponsor.name} slug={sponsor.youtubeSlug} />}
+  </BodyContainer>;
+};
