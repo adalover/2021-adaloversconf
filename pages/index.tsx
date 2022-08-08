@@ -15,12 +15,11 @@
  */
 
 import Page from '@components/page';
-import Layout from '@components/layout';
-import ConfContainer from '@components/conf-container';
-import { DATE, DOSSIER, SITE_NAME, YEAR } from '@lib/constants';
-import { ButtonLinkPrimary } from '@components/buttons/buttonLinkPrimary';
+import { ConfContent } from '@components/confContent/ConfContent';
+import { SITE_NAME, YEAR } from '@lib/constants';
+import { SkipNavContent } from '@reach/skip-nav';
 
-export default function Conf() {
+const Conf = () => {
   const meta = {
     title: SITE_NAME,
     description: `Evento ${SITE_NAME} ${YEAR}`,
@@ -29,17 +28,10 @@ export default function Conf() {
 
   return (
     <Page meta={meta} fullViewport>
-      <Layout hideNav={true}>
-        <ConfContainer>
-          <div className='homeInfo'>
-            <img src='logowhite.png' />
-            {DATE.toUpperCase()}
-            <div className='callToActionContainer'>
-              <ButtonLinkPrimary text="Dossier" isNewPage={true} link={DOSSIER} />
-            </div>
-          </div>
-        </ConfContainer>
-      </Layout>
+      <SkipNavContent />
+      <ConfContent />
     </Page>
   );
-}
+};
+
+export default Conf;

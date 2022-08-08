@@ -21,7 +21,7 @@ import { SkipNavContent } from '@reach/skip-nav';
 import redis from '@lib/redis';
 
 import Page from '@components/page';
-import ConfContent from '@components/index';
+import { ConfContent } from '@components/confContent/ConfContent';
 import { SITE_URL, SITE_NAME, META_DESCRIPTION, SAMPLE_TICKET_NUMBER } from '@lib/constants';
 
 type Props = {

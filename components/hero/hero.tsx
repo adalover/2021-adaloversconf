@@ -14,22 +14,18 @@
  * limitations under the License.
  */
 
-import Page from '@components/page';
-import Layout from '@components/layout';
-import CollaborationSection from '@components/collaboration-container';
-import { COLLABORATION_DESCRIPTION, COLLABORATION_TITLE } from '@lib/staticsText';
+import { DATE } from '@lib/constants';
+import { FC } from 'react';
+import { Info } from '@components/hero/info';
+import { Title } from '@components/hero/title';
+import styled from '@emotion/styled';
 
-export default function CollaborationPage() {
-  const meta = {
-    title: COLLABORATION_TITLE,
-    description: COLLABORATION_DESCRIPTION
-  };
+const Container = styled.div`
+  margin-top: var(--space-12x);
+`;
 
-  return (
-    <Page meta={meta} fullViewport>
-      <Layout>
-        <CollaborationSection />
-      </Layout>
-    </Page>
-  );
-};
+export const Hero: FC = () => <Container>
+  <Title text="AdaLoversConf" />
+  <Info date={DATE} place="ESIT - Universidad de La Laguna" />
+  {/*<Details text="Próximamente más información" />*/}
+</Container>;

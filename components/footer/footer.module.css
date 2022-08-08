@@ -14,29 +14,29 @@
  * limitations under the License.
  */
 
-.hero {
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  font-weight: 800;
-  margin: var(--space-8x) 24px var(--space-2x);
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+  z-index: 2;
 }
 
-.description {
-  font-size: var(--text-md);
-  line-height: 1.4;
-  color: var(--tertiary-color);
-  margin-top: 0;
-  margin-left: 24px;
+.footer-link {
+  color: var(--secondary-color);
+  font-size: 12px;
+  transition: color 0.2s ease;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    font-size: 40px;
-    margin: var(--space-16x) var(--space-8x) var(--space-4x);
-  }
-
-  .description {
-    margin-left: var(--space-8x);
-  }
+.footer-link:hover {
+  color: var(--brand);
 }
+
+.footer-paragraph {
+  margin: 0;
+}
+
+

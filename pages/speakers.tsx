@@ -17,14 +17,12 @@
 import { GetStaticProps } from 'next';
 
 import Page from '@components/page';
-import SpeakersGrid from '@components/speakers-grid';
+import SpeakersGrid from '@components/speakers/speakers-grid';
 import Layout from '@components/layout';
-import Header from '@components/header';
+import { Header } from '@components/header/header';
 
 import { getAllSpeakers } from '@lib/cms-api';
 import { Speaker } from '@lib/types';
-import { META_DESCRIPTION } from '@lib/constants';
-import { SPEAKERS_DESCRIPTION, SPEAKERS_NAME, SPEAKERS_TITLE } from '@lib/staticsText';
 
 type Props = {
   speakers: Speaker[];
@@ -32,13 +30,13 @@ type Props = {
 
 export default function Speakers({ speakers }: Props) {
   const meta = {
-    title: SPEAKERS_TITLE,
-    description: SPEAKERS_DESCRIPTION
+    title: "Nuestras ponentes",
+    description: ''
   };
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero={SPEAKERS_NAME} description={meta.description} />
+        <Header title={meta.title} />
         <SpeakersGrid speakers={speakers} />
       </Layout>
     </Page>

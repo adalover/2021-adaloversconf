@@ -14,25 +14,21 @@
  * limitations under the License.
  */
 
-import Layout from './layout';
-import ConfContainer from './conf-container';
-import styles from '@components/conf-container.module.css';
+import Page from '@components/page';
+import Layout from '@components/layout';
+import AllianceSection from '@components/alliance/alliance-container';
 
-export default function Conf() {
+export default function AlliancePage() {
+  const meta = {
+    title: "Alianza",
+    description: "Alianza con Girl in Tech"
+  };
+
   return (
-    <Layout>
-      <ConfContainer>
-        <div className={styles.video}>
-          <iframe
-            className='embed-responsive-item'
-            src='https://www.youtube.com/embed/h-bS0NuYYfA?autoplay=1&mute=1&loop=1&controls=0&playlist=h-bS0NuYYfA'
-            title='AdaLoversConf 2021'
-            frameBorder='0'
-            allowFullScreen
-          />
-        </div>
-        {/*<Hero />*/}
-      </ConfContainer>
-    </Layout>
+    <Page meta={meta} fullViewport>
+      <Layout>
+        <AllianceSection />
+      </Layout>
+    </Page>
   );
-}
+};

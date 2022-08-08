@@ -14,15 +14,16 @@
  * limitations under the License.
  */
 
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Page from '@components/page';
-import SponsorSection from '@components/sponsor-section';
+import { SponsorSection } from '@components/sponsors/sponsor-section';
 import Layout from '@components/layout';
 
 import { getAllSponsors } from '@lib/cms-api';
 import { Sponsor } from '@lib/types';
-import { META_DESCRIPTION } from '@lib/constants';
+import { EVENT_NAME, META_DESCRIPTION } from '@lib/constants';
+import { BackLink } from '@components/backLink/BackLink';
 
 type Props = {
   sponsor: Sponsor;
@@ -30,13 +31,14 @@ type Props = {
 
 export default function SponsorPage({ sponsor }: Props) {
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: EVENT_NAME,
     description: META_DESCRIPTION
   };
 
   return (
     <Page meta={meta}>
       <Layout>
+        <BackLink text='Volver a empresas colaboradoras' url='/expo' />
         <SponsorSection sponsor={sponsor} />
       </Layout>
     </Page>

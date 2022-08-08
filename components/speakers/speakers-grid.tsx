@@ -35,10 +35,10 @@ export default function SpeakersGrid({ speakers }: Props) {
                 src={speaker.image.url}
                 className={styles.image}
                 loading="lazy"
-                quality="100"
+                quality="50"
                 title={speaker.name}
-                width={500}
-                height={500}
+                width={300}
+                height={300}
               />
             </div>
             <div className={styles.cardBody}>

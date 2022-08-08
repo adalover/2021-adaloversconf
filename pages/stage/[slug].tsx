@@ -31,7 +31,7 @@ type Props = {
 
 export default function StagePage({ stage, allStages }: Props) {
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+      title: 'Demo - Virtual Event Starter Kit',
     description: META_DESCRIPTION
   };
 
@@ -46,6 +46,12 @@ export default function StagePage({ stage, allStages }: Props) {
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const slug = params?.slug;
+  if (!slug) {
+    return {
+      notFound: true
+    };
+  }
+
   const stages = await getAllStages();
   const stage = stages.find((s: Stage) => s.slug === slug) || null;
 
@@ -64,9 +70,11 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   };
 };
 
+const hasSlug = (stage: Stage) => Boolean(stage.slug);
+
 export const getStaticPaths: GetStaticPaths = async () => {
   const stages = await getAllStages();
-  const slugs = stages.map((s: Stage) => ({ params: { slug: s.slug } }));
+  const slugs = stages.filter(hasSlug).map((s: Stage) => ({ params: { slug: s.slug } }));
 
   return {
     paths: slugs,

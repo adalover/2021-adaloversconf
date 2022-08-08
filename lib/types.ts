@@ -20,10 +20,13 @@ export type Image = {
 
 export type Speaker = {
   name: string;
+  oneliner: string;
   bio: string;
   title: string;
   slug: string;
   twitter: string;
+  linkedin: string;
+  webBlog: string;
   github: string;
   company: string;
   talk: Talk;
@@ -58,12 +61,12 @@ export type Sponsor = {
   website: string;
   callToAction: string;
   callToActionLink: string;
+  tierRank: number;
   links: SponsorLink[];
-  discord: string;
   tier: string;
   cardImage: Image;
   logo: Image;
-  youtubeSlug: string;
+  youtubeSlug?: string;
 };
 
 export type SponsorLink = {
@@ -92,11 +95,11 @@ export type ConfUser = {
 
 export type GitHubOAuthData =
   | {
-      type: 'token';
-      token: string;
-    }
+    type: 'token';
+    token: string;
+  }
   | {
-      type: 'user';
-      name: string;
-      login: string;
-    };
+    type: 'user';
+    name: string;
+    login: string;
+  };

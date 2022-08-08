@@ -17,14 +17,12 @@
 import { GetStaticProps } from 'next';
 
 import Page from '@components/page';
-import SponsorsGrid from '@components/sponsors-grid';
-import Header from '@components/header';
+import SponsorsGrid from '@components/sponsors/sponsors-grid';
 import Layout from '@components/layout';
 
 import { getAllSponsors } from '@lib/cms-api';
 import { Sponsor } from '@lib/types';
-import { META_DESCRIPTION } from '@lib/constants';
-import { SPONSOR_DESCRIPTION, SPONSOR_NAME, SPONSOR_TITLE } from '@lib/staticsText';
+import { Header } from '@components/header/header';
 
 type Props = {
   sponsors: Sponsor[];
@@ -32,14 +30,14 @@ type Props = {
 
 export default function ExpoPage({ sponsors }: Props) {
   const meta = {
-    title: SPONSOR_TITLE,
-    description: SPONSOR_DESCRIPTION
+    title: "Empresas colaboradoras",
+    description: ''
   };
 
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero={SPONSOR_NAME} description={meta.description} />
+        <Header title={meta.title} />
         <SponsorsGrid sponsors={sponsors} />
       </Layout>
     </Page>

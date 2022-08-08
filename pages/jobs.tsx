@@ -19,7 +19,7 @@ import { GetStaticProps } from 'next';
 import Page from '@components/page';
 import JobsGrid from '@components/jobs-grid';
 import Layout from '@components/layout';
-import Header from '@components/header';
+import { Header } from '@components/header/header';
 
 import { getAllJobs } from '@lib/cms-api';
 import { Job } from '@lib/types';
@@ -38,7 +38,7 @@ export default function Jobs({ jobs }: Props) {
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero="Career Fair" description={meta.description} />
+        <Header title="Career Fair" description={meta.description} />
         <JobsGrid jobs={jobs} />
       </Layout>
     </Page>
