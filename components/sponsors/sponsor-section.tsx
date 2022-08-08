@@ -36,8 +36,6 @@ const Container = styled.div`
 
 const ContainerDescription = styled.div`
   width: 100%;
-  max-height: 450px;
-  height: 450px;
 `;
 
 const BodyContainer = styled.div`
