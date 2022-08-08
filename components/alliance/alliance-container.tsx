@@ -24,7 +24,7 @@ import { HeaderLogoWithName } from '@components/headerLogoWithName/HeaderLogoWit
 import React from 'react';
 
 const ButtonList = styled.li`
-  margin: 1rem 0;
+  margin: 3rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -61,11 +61,11 @@ export default function AllianceSection() {
         que están comprometidos a apoyar a las mujeres en la tecnología aquí mismo, donde vivimos.</p>
       <ButtonList>
         <ButtonSecondary text='¡Más información!'
-                         action={() => window.open('https://spain.girlsintech.org/', '_blank')} />
+          action={() => window.open('https://spain.girlsintech.org/', '_blank')} />
       </ButtonList>
       <SocialNetworks twitter='https://twitter.com/GirlsinTechES'
-                      instagram='https://www.instagram.com/girlsintech.global/'
-                      youtube='https://www.youtube.com/channel/UCIHdXlugHZMHpd8qRDPKvGQ/' />
+        instagram='https://www.instagram.com/girlsintech.global/'
+        youtube='https://www.youtube.com/channel/UCIHdXlugHZMHpd8qRDPKvGQ/' />
     </DescriptionContainer>
     <VideoContainer>
       <iframe

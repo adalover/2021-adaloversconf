@@ -53,7 +53,6 @@ const BodyContainer = styled.div`
 `;
 
 const CallToAction: FC<CallToActionProps> = ({ callToAction, link }) => {
-  console.log({ callToAction, link });
   return <Container>
     <a
       href={link}
