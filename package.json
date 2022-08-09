@@ -7,7 +7,7 @@
   "homepage": "https://demo.vercel.events",
   "license": "Apache-2.0",
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
   },
   "scripts": {
     "dev": "next",
@@ -18,12 +18,12 @@
   "dependencies": {
     "@agility/content-fetch": "1.0.0",
     "@agility/content-sync": "0.1.23",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@fortawesome/fontawesome-svg-core": "^6.1.2",
-    "@fortawesome/free-brands-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@emotion/react": "11.10.0",
+    "@emotion/styled": "11.10.0",
+    "@fortawesome/fontawesome-svg-core": "6.1.2",
+    "@fortawesome/free-brands-svg-icons": "6.1.2",
+    "@fortawesome/free-solid-svg-icons": "6.1.2",
+    "@fortawesome/react-fontawesome": "0.2.0",
     "@reach/skip-nav": "0.12.1",
     "chrome-aws-lambda": "5.5.0",
     "classnames": "2.2.6",
@@ -36,9 +36,9 @@
     "next": "10.0.3",
     "nprogress": "0.2.0",
     "puppeteer-core": "5.5.0",
-    "react": "17.0.1",
+    "react": "16.11.0",
     "react-aria": "3.2.0",
-    "react-dom": "17.0.1",
+    "react-dom": "16.11.0",
     "smoothscroll-polyfill": "0.4.4",
     "swr": "0.3.9",
     "validator": "13.7.0",

@@ -78,7 +78,7 @@ export const Footer: FC = () => (
                     name='Código de conducta' />
         <Separator />
 
-        <FooterLink scr='./01_Clausula_Aviso_legal.pdf' name='Legal' />
+        <FooterLink scr='./01_Clausula_Aviso_legal.pdf' name='Aviso legal' />
         <Separator />
 
         <FooterLink scr='https://github.com/adalover/2021-adaloversconf' name='Source Code' />

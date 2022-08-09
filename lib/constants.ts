@@ -6,7 +6,7 @@ export const SITE_NAME_MULTILINE = ['AdaLoversConf', 'Conf'];
 export const SITE_NAME = 'AdaLoversConf';
 export const EVENT_NAME = SITE_NAME + '22';
 export const META_DESCRIPTION =
-  'Web del evento con toda la información del mismo. Aquí puedes ver horarios, charlas y conocer a las ponentes con las que contaremos.';
+  'Web del evento con toda la información del mismo. Aquí puedes ver las empresas colaboradoras, horarios, charlas y conocer a las ponentes con las que contaremos.';
 export const SITE_DESCRIPTION =
   EVENT_NAME + ' evento online, visibilizando a mujeres del sector de desarrollo de software.';
 export const DATE = `Septiembre 24, ${YEAR}`;
@@ -16,8 +16,6 @@ export const COOKIE = 'user-id';
 export const CALL_FOR_PAPER = 'https://forms.gle/pgTtB4k5wPdLDHVw6';
 export const DOSSIER = '/ES_Dossier_AdaLoversConf_2022.pdf';
 
-export const CODE_OF_CONDUCT =
-  '';
 export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
