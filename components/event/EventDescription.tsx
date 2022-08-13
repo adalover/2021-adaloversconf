@@ -24,7 +24,8 @@ export const EventDescription: FC = () => {
     <p className={commonStyles.description}>¡Volvemos a vernos en presencial! 🙌</p>
     <p className={commonStyles.description}>La comunidad AdaLoveDev organizamos este evento cada año con el
       objetivo de visibilizar a la mujer en el sector tecnológico. Nuestra comunidad de desarrolladoras, entre sus
-      múltiples propósitos, tiene el de <strong>dar a conocer el talento tecnológico femenino</strong> que existe en las Islas
+      múltiples propósitos, tiene el de <strong>dar a conocer el talento tecnológico femenino</strong> que existe en las
+      Islas
       Canarias.👩‍💻</p>
     <p className={commonStyles.description}>AdaLoversConf es un evento abierto a todo el público y, en él, podrás
       compartir conocimiento, hacer networking, e incluso venir con tu familia. Además, este año hemos apostado
@@ -34,6 +35,8 @@ export const EventDescription: FC = () => {
       <ButtonSecondary text='¡Compra tu entrada!'
                        action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
       <ButtonTertiary text='Dossier' action={() => window.open(DOSSIER, '_blank')} />
+      <ButtonTertiary text='Información de la zona'
+                      action={() => window.open('https://adalovedev.notion.site/Informaci-n-para-asistentes-AdaLoversConf22-359aa7387ec6415dbbeb7f6ca897ac87', '_blank')} />
     </ButtonList>
     <SocialNetworks twitter='https://twitter.com/adalovedev'
                     instagram='https://www.instagram.com/adalovedev/'
