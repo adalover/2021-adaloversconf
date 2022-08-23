@@ -33,13 +33,14 @@ export const EventDescription: FC = () => {
     <p className={commonStyles.description}>¿Te lo vas a perder?</p>
     <ButtonList>
       <ButtonSecondary text='¡Compra tu entrada!'
-                       action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
+        action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
+      <ButtonTertiary text='Pide tu factura' action={() => window.open('https://forms.gle/cKeSCwEsxyZpGo4j7', '_blank')} />
       <ButtonTertiary text='Dossier' action={() => window.open(DOSSIER, '_blank')} />
       <ButtonTertiary text='Información de la zona'
-                      action={() => window.open('https://adalovedev.notion.site/Informaci-n-para-asistentes-AdaLoversConf22-359aa7387ec6415dbbeb7f6ca897ac87', '_blank')} />
+        action={() => window.open('https://adalovedev.notion.site/Informaci-n-para-asistentes-AdaLoversConf22-359aa7387ec6415dbbeb7f6ca897ac87', '_blank')} />
     </ButtonList>
     <SocialNetworks twitter='https://twitter.com/adalovedev'
-                    instagram='https://www.instagram.com/adalovedev/'
-                    youtube='https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos' />
+      instagram='https://www.instagram.com/adalovedev/'
+      youtube='https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos' />
   </Container>;
 };
