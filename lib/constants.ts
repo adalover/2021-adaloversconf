@@ -26,11 +26,6 @@ export const NAVIGATION = [
     hide: false
   },
   {
-    name: 'Empresas colaboradoras',
-    route: '/expo',
-    hide: false
-  },
-  {
     name: 'Nuestras ponentes',
     route: '/speakers',
     hide: false
@@ -38,7 +33,12 @@ export const NAVIGATION = [
   {
     name: 'Horarios',
     route: '/schedule',
-    hide: true
+    hide: false
+  },
+  {
+    name: 'Empresas colaboradoras',
+    route: '/expo',
+    hide: false
   },
   {
     name: 'Otras colaboraciones',
