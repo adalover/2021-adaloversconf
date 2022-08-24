@@ -8,9 +8,16 @@ import { SocialNetworks } from '@components/social-networks/social-networks';
 import { HeaderLogoWithName } from '@components/headerLogoWithName/HeaderLogoWithName';
 
 const ButtonList = styled.li`
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+`;
+
+const SecondaryButtonList = styled.li`
+  margin: 1rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
 `;
 
@@ -33,13 +40,18 @@ export const EventDescription: FC = () => {
     <p className={commonStyles.description}>¿Te lo vas a perder?</p>
     <ButtonList>
       <ButtonSecondary text='¡Compra tu entrada!'
-                       action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
+        action={() => window.open('https://www.tomaticket.es/es-es/entradas-adaloversconf', '_blank')} />
+      <ButtonTertiary text='Pide tu factura' action={() => window.open('https://forms.gle/cKeSCwEsxyZpGo4j7', '_blank')} />
+    </ButtonList>
+    <SecondaryButtonList>
       <ButtonTertiary text='Dossier' action={() => window.open(DOSSIER, '_blank')} />
       <ButtonTertiary text='Información de la zona'
-                      action={() => window.open('https://adalovedev.notion.site/Informaci-n-para-asistentes-AdaLoversConf22-359aa7387ec6415dbbeb7f6ca897ac87', '_blank')} />
-    </ButtonList>
+        action={() => window.open('https://adalovedev.notion.site/Informaci-n-para-asistentes-AdaLoversConf22-359aa7387ec6415dbbeb7f6ca897ac87', '_blank')} />
+      <ButtonTertiary text='FAQs'
+        action={() => window.open('https://adalovedev.notion.site/f13bb51deb8c4513b5e70d79ac7eae3e?v=c37caa38bbc24b4689298d7ae4c989ec', '_blank')} />
+    </SecondaryButtonList>
     <SocialNetworks twitter='https://twitter.com/adalovedev'
-                    instagram='https://www.instagram.com/adalovedev/'
-                    youtube='https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos' />
+      instagram='https://www.instagram.com/adalovedev/'
+      youtube='https://www.youtube.com/channel/UCiUgaJGlunCT7jwwbliAiPw/videos' />
   </Container>;
 };
