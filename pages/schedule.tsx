@@ -32,7 +32,7 @@ type Props = {
 export default function SchedulePage({ allStages }: Props) {
   const meta = {
     title: SCHEDULE_TITLE,
-    description: SCHEDULE_DESCRIPTION
+    description: ''
   };
 
   return (
