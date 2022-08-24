@@ -17,13 +17,13 @@
 import { GetStaticProps } from 'next';
 
 import Page from '@components/page';
-import Schedule from '@components/schedule';
+import { Schedule } from '@components/schedule/schedule';
 import Layout from '@components/layout';
 import { Header } from '@components/header/header';
 
 import { getAllStages } from '@lib/cms-api';
 import { Stage } from '@lib/types';
-import { SCHEDULE_DESCRIPTION, SCHEDULE_NAME, SCHEDULE_TITLE } from '@lib/staticsText';
+import { SCHEDULE_NAME, SCHEDULE_TITLE } from '@lib/staticsText';
 
 type Props = {
   allStages: Stage[];

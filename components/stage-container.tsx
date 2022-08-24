@@ -19,7 +19,7 @@ import cn from 'classnames';
 import { Stage } from '@lib/types';
 import styles from './stage-container.module.css';
 import styleUtils from './utils.module.css';
-import ScheduleSidebar from './schedule-sidebar';
+import ScheduleSidebar from './schedule/schedule-sidebar';
 import { URL_STREAM } from '@lib/constants';
 
 type Props = {
