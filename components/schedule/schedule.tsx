@@ -25,7 +25,7 @@ interface ScheduleProps {
 
 const Container = styled.div`
   overflow: auto;
-  
+
   @media (min-width: 700px) {
     margin-top: var(--space-4x);
   }
@@ -35,8 +35,19 @@ const ColumnWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   max-width: 1407px;
-  @media (min-width: 700px) {
-    margin-left: 475px;
+  //margin-left: 475px;
+  margin-left: 480px;
+
+  @media (min-width: 768px) {
+    margin-left: 200px;
+  }
+  
+  @media (min-width: 912px) {
+    margin-left: 60px;
+  }
+  
+  @media (min-width: 1024px) {
+    margin-left: 0;
   }
 `;
 
