@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Stage, Talk } from '@lib/types';
 import { StageName } from '@components/schedule/StageName';
-import TalkCard from '@components/talk-card';
+import { TalkInfo } from '@components/talk/TalkInfo';
 import React, { FC } from 'react';
 
 const Container = styled.div`
@@ -10,7 +10,6 @@ const Container = styled.div`
   flex-direction: column;
   align-content: center;
   margin: 0 24px;
-  border-bottom: 1px solid var(--accents-7);
 
   @media (min-width: 700px) {
     flex-direction: column;
@@ -43,7 +42,7 @@ export const StageColumn: FC<StageColumnProps> = ({ stage }) => {
         {Object.keys(timeBlocks).map((startTime: string) => (
           <div key={startTime}>
             {timeBlocks && timeBlocks[startTime].map((talk: Talk, index: number) => (
-              <TalkCard key={talk.title} talk={talk} showTime={index === 0} />
+              <TalkInfo key={talk.title} talk={talk} showTime={index === 0} />
             ))}
           </div>
         ))}
