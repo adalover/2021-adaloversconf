@@ -21,12 +21,12 @@ export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
 
 export const NAVIGATION = [
   {
-    name: 'El evento',
+    name: 'Conferencia',
     route: '/event',
     hide: false
   },
   {
-    name: 'Nuestras ponentes',
+    name: 'Ponentes',
     route: '/speakers',
     hide: false
   },
@@ -36,17 +36,22 @@ export const NAVIGATION = [
     hide: false
   },
   {
-    name: 'Empresas colaboradoras',
+    name: 'Colaboración',
     route: '/expo',
     hide: false
   },
   {
-    name: 'Otras colaboraciones',
+    name: 'Sinergias',
     route: '/alliance',
     hide: false
   },
   {
-    name: 'En directo',
+    name: 'Empleo',
+    route: '/jobs',
+    hide: true
+  },
+  {
+    name: 'Directo',
     route: '/stage/charlas',
     hide: true
   }
