@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Speaker } from '@lib/types';
-import styled from '@emotion/styled/dist/emotion-styled.cjs';
+import styled from '@emotion/styled';
 import { TalkCardBody } from '@components/talk/TalkCardBody';
 
 interface TalkCardProps {

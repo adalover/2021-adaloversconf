@@ -1,4 +1,4 @@
-import styled from '@emotion/styled/dist/emotion-styled.cjs';
+import styled from '@emotion/styled';
 import { Speaker } from '@lib/types';
 import React, { FC } from 'react';
 import { TalkTitle } from './TaklTitle';
