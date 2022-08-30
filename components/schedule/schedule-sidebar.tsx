@@ -18,8 +18,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Stage } from '@lib/types';
 import styles from './schedule-sidebar.module.css';
-import Select from './select';
-import TalkCard from './talk-card';
+import { TalkInfo } from '../talk/TalkInfo';
 import { SHORT_DATE } from '@lib/constants';
 
 type Props = {
@@ -42,7 +41,7 @@ export default function ScheduleSidebar({ allStages }: Props) {
 
       <div className={styles.talks}>
         {currentStage?.schedule.map(talk => (
-          <TalkCard key={talk.title} talk={talk} showTime />
+          <TalkInfo key={talk.title} talk={talk} showTime />
         ))}
       </div>
     </div>
