@@ -24,21 +24,15 @@ type Props = {
 };
 
 export default function SponsorsGrid({ sponsors }: Props) {
-  const silverSponsors = sponsors.filter(s => s.tier === 'silver');
-  const otherSponsors = sponsors.filter(s => s.tier !== 'silver');
 
   return (
-    <>
-      <div className={styles.grid}>
-        {otherSponsors.map(sponsor => (
-          <SponsorCard key={sponsor.name} sponsor={sponsor} />
-        ))}
-      </div>
-      <div className={styles.grid}>
-        {silverSponsors.map(sponsor => (
-          <SponsorCard key={sponsor.name} sponsor={sponsor} />
-        ))}
-      </div>
-    </>
-  );
+      <>
+          {[1, 2, 3, 4].map(i => (
+              <div key={i} className={styles.grid}>
+                  {sponsors.filter(s => s.tierRank === i).map(sponsor => (
+                  <SponsorCard key={sponsor.name} sponsor={sponsor} />))}
+              </div>
+          ))}
+      </>
+  )
 }
