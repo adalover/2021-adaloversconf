@@ -17,18 +17,40 @@
 import { Sponsor } from '@lib/types';
 import styles from './sponsors-grid.module.css';
 import { SponsorCard } from '@components/sponsors/sponsor-card';
+import styled from "@emotion/styled/dist/emotion-styled.cjs";
+import { SPONSOR_CATEGORIES } from '@lib/constants';
 
 
 type Props = {
   sponsors: Sponsor[];
 };
 
+const Container = styled.h3`
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  min-width: 220px;
+  padding-bottom: var(--space-2x);
+  left: initial;
+  color: var(--brand);
+  
+  @media (min-width: 700px) {
+    font-size: var(--space-8x);
+    left: 0;
+    z-index: 1;
+  }
+`;
+
 export default function SponsorsGrid({ sponsors }: Props) {
 
+  // it is ugly but it works (for now)
   return (
       <>
           {[1, 2, 3, 4].map(i => (
               <div key={i} className={styles.grid}>
+                  <Container><span>{SPONSOR_CATEGORIES[i]}</span></Container>
                   {sponsors.filter(s => s.tierRank === i).map(sponsor => (
                   <SponsorCard key={sponsor.name} sponsor={sponsor} />))}
               </div>

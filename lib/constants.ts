@@ -18,43 +18,44 @@ export const DOSSIER = '/ES_Dossier_AdaLoversConf_2022.pdf';
 
 export const REPO = 'https://github.com/adalover/2021-adaloversconf';
 export const URL_STREAM = 'https://www.youtube.com/embed/Hs6spuMeWiY';
+export const SPONSOR_CATEGORIES: Record<number, string> = {1: "Ada Lovelace", 2: "\"Steve\" Shirley", 3: "Hedy Lamarr", 4: "Grace Hopper"} as const;
 
 export const NAVIGATION = [
-  {
-    name: 'Conferencia',
-    route: '/event',
-    hide: false
-  },
-  {
-    name: 'Ponentes',
-    route: '/speakers',
-    hide: false
-  },
-  {
-    name: 'Horarios',
-    route: '/schedule',
-    hide: false
-  },
-  {
-    name: 'Colaboración',
-    route: '/expo',
-    hide: false
-  },
-  {
-    name: 'Sinergias',
-    route: '/alliance',
-    hide: false
-  },
-  {
-    name: 'Empleo',
-    route: '/jobs',
-    hide: true
-  },
-  {
-    name: 'Directo',
-    route: '/stage/charlas',
-    hide: true
-  }
+    {
+        name: 'Conferencia',
+        route: '/event',
+        hide: false
+    },
+    {
+        name: 'Ponentes',
+        route: '/speakers',
+        hide: false
+    },
+    {
+        name: 'Horarios',
+        route: '/schedule',
+        hide: false
+    },
+    {
+        name: 'Colaboración',
+        route: '/expo',
+        hide: false
+    },
+    {
+        name: 'Sinergias',
+        route: '/alliance',
+        hide: false
+    },
+    {
+        name: 'Empleo',
+        route: '/jobs',
+        hide: true
+    },
+    {
+        name: 'Directo',
+        route: '/stage/charlas',
+        hide: true
+    }
 ];
 
 export const SAMPLE_TICKET_NUMBER = 1234;
