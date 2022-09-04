@@ -19,6 +19,10 @@ const SecondaryButtonList = styled.li`
   display: flex;
   flex-direction: row;
   gap: 1rem;
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+  }
 `;
 
 const Container = styled.div`
