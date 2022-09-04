@@ -75,7 +75,10 @@ export const Footer: FC = () => (
       </Copyrigth>
       <CenterGroup>
         <FooterLink scr='https://adalovedev.notion.site/C-digo-de-conducta-d99cf9bc2b294b088856d8125821f1b6'
-                    name='Código de conducta' />
+          name='Código de conducta' />
+        <Separator />
+        <FooterLink scr='./02_Clausula_Politica_de_privacidad.pdf'
+          name='Política de privacidad' />
         <Separator />
 
         <FooterLink scr='./01_Clausula_Aviso_legal.pdf' name='Aviso legal' />
