@@ -11,7 +11,7 @@ const Container = styled.div`
 
 interface CardBodyProps {
   title: string;
-  speaker: Speaker[];
+  speakers: Speaker[];
 }
 
 const Speakers = styled.div`
@@ -19,10 +19,10 @@ const Speakers = styled.div`
   margin-top: var(--space-2x);
 `;
 
-export const TalkCardBody: FC<CardBodyProps> = ({ title, speaker }) => <Container>
+export const TalkCardBody: FC<CardBodyProps> = ({ title, speakers }) => <Container>
   <TalkTitle title={title} />
   <Speakers>
-    <SpeakerAvatars speakers={speaker} />
-    <SpeakerNames speakers={speaker} />
+    <SpeakerAvatars speakers={speakers} />
+    <SpeakerNames speakers={speakers} />
   </Speakers>
 </Container>;

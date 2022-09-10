@@ -6,10 +6,10 @@ import { TalkCardBody } from '@components/talk/TalkCardBody';
 interface TalkCardProps {
   isTalkLive: boolean;
   title: string;
-  speaker: Speaker[];
+  speakers: Speaker[];
 }
 
-const TalkLive = styled.a`
+const TalkLive = styled.div`
   color: inherit;
   display: block;
   border-radius: var(--space-2x);
@@ -28,7 +28,7 @@ const TalkLive = styled.a`
   }
 `;
 
-const TalkNotLive = styled.a`
+const TalkNotLive = styled.div`
   color: inherit;
   display: block;
   border-radius: var(--space-2x);
@@ -46,14 +46,15 @@ const TalkNotLive = styled.a`
   }
 `;
 
-export const TalkCard: FC<TalkCardProps> = ({ isTalkLive, title, speaker }) => {
+export const TalkCard: FC<TalkCardProps> = ({ isTalkLive, title, speakers }) => {
+
   if (isTalkLive) {
     return <TalkLive>
-      <TalkCardBody title={title} speaker={speaker} />
+      <TalkCardBody title={title} speakers={speakers} />
     </TalkLive>;
   }
 
   return <TalkNotLive>
-    <TalkCardBody title={title} speaker={speaker} />
+    <TalkCardBody title={title} speakers={speakers} />
   </TalkNotLive>;
 };

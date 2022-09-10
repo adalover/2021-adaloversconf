@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
-import { Speaker, Talk } from '@lib/types';
+import { Talk } from '@lib/types';
 import styled from '@emotion/styled';
 import { TalkCard } from '@components/talk/TalkCard';
 
@@ -51,14 +50,18 @@ export const TalkInfo: FC<Props> = ({ talk, showTime }) => {
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
   }, [end, start]);
 
-  const firstSpeakerLink = `/speakers/${speaker?.[0]?.slug}`;
-
+  const speakerSlug = speaker?.[0]?.slug;
   return (
     <Container key={title}>
       {showTime && <Time>{startAndEndTime || <>&nbsp;</>}</Time>}
-      <Link href={firstSpeakerLink}>
-        <TalkCard isTalkLive={isTalkLive} title={title} speaker={speaker} />
-      </Link>
+      {speakerSlug &&
+        <a href={`/speakers/${speakerSlug}`}>
+          <TalkCard isTalkLive={isTalkLive} title={title} speakers={speaker} />
+        </a>
+      }
+      {!speakerSlug &&
+        <TalkCard isTalkLive={isTalkLive} title={title} speakers={speaker} />
+      }
     </Container>
   );
 };
