@@ -49,7 +49,7 @@ export const NAVIGATION = [
     {
         name: 'Empleo',
         route: '/jobs',
-        hide: true
+        hide: false
     },
     {
         name: 'Directo',

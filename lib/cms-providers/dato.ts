@@ -32,6 +32,7 @@ async function fetchCmsAPI(query: string, { variables }: { variables?: Record<st
   });
 
   const json = await res.json();
+  console.log(1233, {json});
   if (json.errors) {
     // eslint-disable-next-line no-console
     console.error(json.errors);
@@ -136,7 +137,6 @@ export async function getAllJobs(): Promise<Job[]> {
         companyName
         title
         description
-        discord
         link
         rank
       }

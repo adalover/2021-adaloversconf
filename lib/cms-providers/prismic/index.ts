@@ -172,7 +172,7 @@ export async function getAllStages(): Promise<Stage[]> {
       name: richTextAsText(edge.node.name),
       slug: edge.node._meta.uid,
       stream: getLinkUrl(edge.node.stream),
-      discord: getLinkUrl(edge.node.discord),
+      // discord: getLinkUrl(edge.node.discord),
       schedule: edge.node.schedule
         .filter((item: any) => item.talk)
         .map((item: any) => {
@@ -255,7 +255,7 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
       website: getLinkUrl(edge.node.website),
       callToAction: richTextAsText(edge.node.call_to_action),
       callToActionLink: getLinkUrl(edge.node.call_to_action_link),
-      discord: getLinkUrl(edge.node.discord),
+      // discord: getLinkUrl(edge.node.discord),
       youtubeSlug: edge.node.youtube_slug,
       tier: edge.node.tier,
       links: edge.node.links.map((item: any) => ({
@@ -288,12 +288,6 @@ export async function getAllJobs(): Promise<Job[]> {
             company_name
             title
             description
-            discord {
-              _linkType
-              ...on _ExternalLink {
-                url
-              }
-            }
             link {
               _linkType
               ...on _ExternalLink {
@@ -313,7 +307,7 @@ export async function getAllJobs(): Promise<Job[]> {
       companyName: richTextAsText(edge.node.company_name),
       title: richTextAsText(edge.node.title),
       description: richTextAsText(edge.node.description),
-      discord: getLinkUrl(edge.node.discord),
+      // discord: getLinkUrl(edge.node.discord),
       link: getLinkUrl(edge.node.link),
       rank: edge.node.rank
     };

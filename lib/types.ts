@@ -79,7 +79,6 @@ export type Job = {
   companyName: string;
   title: string;
   description: string;
-  discord: string;
   link: string;
   rank: number;
 };

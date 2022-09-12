@@ -197,7 +197,7 @@ export async function getAllJobs(): Promise<Job[]> {
         companyName: job.fields.company?.fields.name,
         title: job.fields.name,
         description: job.fields.description,
-        discord: job.fields.discord,
+        // discord: job.fields.discord,
         link: job.fields.link,
         rank: parseInt(job.fields.rank)
       };
